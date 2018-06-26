@@ -1,0 +1,19 @@
+.container {
+    padding-top: 100px;
+}
+
+.card {
+    padding: 15px 30px;
+    width: 50%;
+    margin: auto;
+}
+
+#email {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 100%;
+    }
+}

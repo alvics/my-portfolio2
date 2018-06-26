@@ -1,0 +1,24 @@
+.view {
+    background: url("/assets/images/hero.jpeg")no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.navbar {
+    z-index: 1;
+}
+
+a {
+    color: #fff;
+}
+
+#banner {
+    height: 80px;
+    width: 100%;
+    background-color: #e3e5e7;
+}
+
+span.banner-text {
+    text-align: center;
+    padding-top: 50px;
+}

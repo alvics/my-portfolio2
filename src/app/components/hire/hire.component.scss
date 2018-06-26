@@ -1,0 +1,29 @@
+.container {
+    padding-top: 100px;
+}
+
+h3,
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h4 {
+    line-height: 1.35em;
+}
+
+.card {
+    padding: 15px 30px;
+    width: 50%;
+    margin: auto;
+}
+
+#email {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.navbar {
+    overflow-y: hidden;
+}
+
+links {
+    margin-left: 200px;
+    padding-left: 80px;
+}
+
+li a:hover {
+    color: #0474bc;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #0474bc;
+    font-size: 30px;
+    font-weight: 700;
+}
