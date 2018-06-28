@@ -1,3 +1,12 @@
+/* .bck-img {
+    background-image: url('/assets/images/contact.jpeg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin-bottom: -70px;
+} */
+
 .container {
     padding-top: 100px;
 }
@@ -18,5 +27,9 @@
 @media (max-width:1000px) {
     .card {
         width: 100%;
+        padding: 0;
+    }
+    .bck-img {
+        display: hidden;
     }
 }

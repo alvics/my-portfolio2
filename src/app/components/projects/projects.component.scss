@@ -1,0 +1,20 @@
+#bck-img {
+    background-image: url('/assets/images/color.jpeg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin-bottom: -70px;
+}
+
+.overlay {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 55px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}

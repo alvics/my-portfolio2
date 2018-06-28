@@ -50,6 +50,25 @@ h2 {
     animation-iteration-count: infinite;
 }
 
+.about {
+    font-weight: bold;
+    color: black;
+}
+
+.me {
+    font-weight: bold;
+    color: #0078d7;
+}
+
+.container-fluid {
+    text-align: center;
+    color: #fff;
+    background-color: #0078d7;
+    padding: 35px 250px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+}
+
 @keyframes rainbow2 {
     0% {
         background-color: black;
@@ -60,8 +79,4 @@ h2 {
     100% {
         background-color: #0078d7;
     }
-}
-
-#other-interests {
-    color: #232323;
 }
