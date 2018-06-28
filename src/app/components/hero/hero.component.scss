@@ -1,7 +1,13 @@
 .view {
-    background: url("/assets/images/hero.jpeg")no-repeat center center;
+    background: url("/assets/images/hero1.jpeg")no-repeat center center;
     background-size: cover;
     height: 70vh;
+}
+
+.container {
+    height: 200px;
+    padding-bottom: 0px;
+    margin-bottom: -130px;
 }
 
 .navbar {

@@ -4,16 +4,64 @@
 }
 
 .fcc {
-    font-weight: 500;
+    font-weight: bold;
     color: #006400;
 }
 
-#col1 {
-    background-image: linear-gradient(90deg, aquamarine, #0a9f8f);
-    padding: 50px 25px;
+h2 {
+    color: #232323;
 }
 
-#col2 {
-    background-image: linear-gradient(90deg, bisque, orange);
+
+/* #col1 {
+    background-image: linear-gradient(90deg, aquamarine, #0a9f8f);
     padding: 50px 25px;
+} */
+
+#col1 {
+    padding: 50px 45px;
+    animation-name: rainbow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: #0078d7;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
+/* #col2 {
+    background-image: linear-gradient(90deg, bisque, orange);
+    padding: 50px 45px;
+} */
+
+#col2 {
+    padding: 50px 45px;
+    animation-name: rainbow2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow2 {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: #0078d7;
+    }
+}
+
+#other-interests {
+    color: #232323;
 }

@@ -1,14 +1,18 @@
+nav {
+    background-color: #232323;
+}
+
 .navbar {
     overflow-y: hidden;
 }
 
 links {
-    margin-left: 200px;
-    padding-left: 80px;
+    margin-left: 100px;
 }
 
-li a:hover {
-    color: #0474bc;
+a.nav-link {
+    font-size: 14px;
+    padding-left: 40px !important;
 }
 
 .logo {
@@ -19,8 +23,14 @@ li a:hover {
     text-transform: uppercase;
 }
 
-.logo span {
-    color: #0474bc;
-    font-size: 30px;
-    font-weight: 700;
+.fa {
+    padding-left: 40px;
+    color: #fff;
+    transition: 0.35s;
+}
+
+.fa:hover {
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.35s;
 }

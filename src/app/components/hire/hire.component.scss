@@ -3,12 +3,14 @@
 }
 
 h3,
-h4 {
-    font-family: 'Courier New', Courier, monospace;
+h4,
+h5 {
+    font-family: 'Michroma', sans-serif;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-h4 {
+h5 {
     line-height: 1.35em;
 }
 
@@ -18,8 +20,10 @@ h4 {
     margin: auto;
 }
 
-#email {
+#email,
+#phone {
     font-family: 'Courier New', Courier, monospace;
+    line-height: .5em;
 }
 
 @media (max-width:1000px) {

@@ -8,8 +8,11 @@
     margin: auto;
 }
 
-#email {
+#email,
+#phone {
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    line-height: .5em;
 }
 
 @media (max-width:1000px) {

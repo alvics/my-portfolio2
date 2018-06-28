@@ -1,0 +1,11 @@
+<div class="container pt-5">
+    <h1>My Blog</h1>
+    <ul>
+        <li *ngFor="let post of posts$">
+            <h3>
+                <div [innerHTML]="post.title.rendered"></div>
+            </h3>
+            <div [innerHTML]="post.content.rendered"></div>
+        </li>
+    </ul>
+</div>
