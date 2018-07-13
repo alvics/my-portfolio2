@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getPosts() {
-    return this.http.get('https://ewebdesigns.com.au/wp-json/wp/v2/posts');
+    return this.http.get('https://ewebdesigns.com.au/wp-json/wp/v2/posts?per_page=2');
     }
 }

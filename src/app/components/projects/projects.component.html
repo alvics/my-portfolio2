@@ -1,9 +1,11 @@
+<!-- Comming from Contenful CMS -->
+
 <div id="bck-img">
     <div class="container" *ngFor="let layout of layouts">
         <div class="overlay">
             <h1 class="pt-5">{{ layout.fields.title }}</h1>
             <br>
-            <div [innerHTML]="layout.fields.body | mdToHtml"></div>
+            <div id="contentful" [innerHTML]="layout.fields.body | mdToHtml"></div>
 
             <!-- <div *ngFor="let i of layout.fields.images">
     <img src="{{ layout.fields.images.fields.file.url }}" />  -->

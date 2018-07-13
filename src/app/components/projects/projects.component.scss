@@ -4,7 +4,7 @@
     background-size: cover;
     height: 100vh;
     position: relative;
-    margin-bottom: -70px;
+    margin-bottom: 100px;
 }
 
 .overlay {
@@ -17,4 +17,10 @@
     height: 100vh;
     position: relative;
     z-index: 1;
+}
+
+#contenful {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }

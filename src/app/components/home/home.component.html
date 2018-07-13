@@ -1,36 +1,53 @@
-<app-hero></app-hero>
-
+<app-hero>
+</app-hero>
+<!-- WORDPRESS ANGULAR -->
 <div id="s1" class="container">
     <div class="row">
         <div class="col-md-6">
             <i class="fa fa-wordpress"></i>
             <h3>WordPress Development</h3>
-            <ul>
-                <li>Shop-front / wooCommerce</li>
-                <li>Easily customisable</li>
-                <li>Admin dashboard</li>
+            <ul class="wp-p">
+                <img class="right-tick" src="/assets/images/right.png" alt="">
+                <li>Shop front for small - medium business</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
+                <li> Easily customisable Publish with ease</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
+                <li> Admin dashboard for user management</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>SEO friendly</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Quick edits</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Blog posts</li>
             </ul>
 
         </div>
         <div class="col-md-6">
-            <img src="/assets/images/ng.png" alt="" width="110" height="110">
+            <img id="ngImage" src="/assets/images/ng.png" alt="" width="110" height="110">
             <h3>Angular Development</h3>
-            <ul>
+
+            <ul class="ng-p">
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Designed by google</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Build SPA & PWA</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Faster page loads</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Greater user experiance</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>Mobile & Desktop</li>
+                <img class="right-tick" src="/assets/images/right.png" alt="">
                 <li>JavaScript framework</li>
             </ul>
         </div>
     </div>
 </div>
+<!-- Image eweb -->
 
-<!-- Grid Home -->
+<img class="displayed" src="/assets/images/15.png" alt="">
+
+<!-- CONTENT -->
 <section class="tile-gray">
     <div class="container">
         <div class="grid">
@@ -44,16 +61,124 @@
             </div>
         </div>
     </div>
-
-
-    <div class="section-b">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Ready to start your Enterprise?</h3>
-                    <p>Get started building your website.</p>
+</section>
+<!-- ANGULAR PROJECTS -->
+<!-- 
+<section id="projectsA">
+    <div class="container mt-5">
+        <h4>Angular Projects</h4>
+        <div class="row">
+            <div class="wrapper">
+                <div class="col-md-6 col-sm-6 col-xs-12"><img src="/assets/images/ap1_5.png" alt=""></div>
+                <div class="overlay">
+                    <div class="content"><a href="https://github.com/alvics/Allen-Pavic" target="blank"><i class="fa fa-github-square fa-2x"></i></a> <span> or</span>
+                        <a href="https://allen-portfolio.firebaseapp.com/" target="blank"><span> Live Demo</span></a>
+                    </div>
                 </div>
-                <div class="col-md-6"><button class="btn btn-lg"><a routerLink="/contact">GET IN TOUCH </a></button></div>
             </div>
+
+
+
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/ap5.png" alt=""></div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/ngool_5.png" height="245" alt=""></div>
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/bucket_lis5.png" alt=""></div>
         </div>
     </div>
+</section> -->
+
+<app-portfolio></app-portfolio>
+
+
+<!-- WORDPRESS PROJECTS -->
+<!--  <section id="projectsW">
+    <div class="container">
+        <h4>WordPress Projects</h4>
+        <div class="row">
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/img1.jpg" alt=""></div>
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/img2.jpg" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/oll.png" alt=""></div>
+            <div class="col-md-6 col-xs-12"><img src="/assets/images/ewd.png" alt=""></div>
+        </div>
+    </div>
+
+</section>  -->
+
+
+
+<!-- BLUE BANNER -->
+<div class="section-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Ready to start your Enterprise?</h3>
+                <p>Get started building your website.</p>
+            </div>
+            <div class="col-md-6"><button class="btn btn-lg waves-light" (click)="form.show()">GET IN TOUCH</button></div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT FORM 
+<button type="button" class="btn btn-primary waves-light" (click)="form.show()" mdbWavesEffect>
+    Contact form</button> -->
+<!--Modal: Contact form-->
+<div mdbModal #form="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h4 class="title">
+                    <i class="fa fa-pencil"></i> Contact form</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mb-0">
+                <form [formGroup]="modalForm">
+                    <div class="md-form form-sm">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input mdbInputDirective type="text" id="modalFormNameEx" formControlName="modalFormNameEx" class="form-control">
+                        <label for="modalFormNameEx">Your name</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                        <i class="fa fa-lock prefix"></i>
+                        <input mdbInputDirective type="email" id="modalFormEmailEx" formControlName="modalFormEmailEx" class="form-control">
+                        <label for="modalFormEmailEx">Your email</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                        <i class="fa fa-tag prefix"></i>
+                        <input mdbInputDirective type="text" id="modalFormSubjectEx" formControlName="modalFormSubjectEx" class="form-control">
+                        <label for="modalFormSubjectEx">Subject</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                        <i class="fa fa-pencil prefix"></i>
+                        <textarea mdbInputDirective type="text" id="modalFormTextEx" formControlName="modalFormTextEx" class="md-textarea mb-0"></textarea>
+                        <label for="modalFormTextEx">Your message</label>
+                    </div>
+
+                    <div class="text-center mt-1-half">
+                        <button class="btn btn-info mb-2 waves-light" mdbWavesEffect>Send
+                <i class="fa fa-send ml-1"></i>
+              </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Contact form-->

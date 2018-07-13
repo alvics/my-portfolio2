@@ -1,3 +1,8 @@
+#shadow {
+    padding: 10px 0;
+    height: 10px;
+}
+
 .view {
     background: url("/assets/images/hero1.jpeg")no-repeat center center;
     background-size: cover;
@@ -8,6 +13,7 @@
     height: 200px;
     padding-bottom: 0px;
     margin-bottom: -130px;
+    width: 50%;
 }
 
 .navbar {

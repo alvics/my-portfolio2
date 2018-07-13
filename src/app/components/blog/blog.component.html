@@ -1,11 +1,13 @@
 <div class="container pt-5">
-    <h1>My Blog</h1>
-    <ul>
-        <li *ngFor="let post of posts$">
-            <h3>
-                <div [innerHTML]="post.title.rendered"></div>
-            </h3>
-            <div [innerHTML]="post.content.rendered"></div>
-        </li>
-    </ul>
+    <h2 class="pb-4">My <span class="blog">Blog</span></h2>
+    <div class="overlay">
+        <ul>
+            <li *ngFor="let post of posts$">
+                <h3>
+                    <div [innerHTML]="post.title.rendered"></div>
+                </h3>
+                <div [innerHTML]="post.content.rendered"></div>
+            </li>
+        </ul>
+    </div>
 </div>

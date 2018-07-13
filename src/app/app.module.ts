@@ -17,6 +17,8 @@ import { FooterComponent } from './ui/componets/footer/footer.component';
 import { NavbarComponent } from './ui/componets/navbar/navbar.component';
 import { ContentfulService } from './contentful.service';
 import { MdToHtmlPipe } from './md-to-html.pipe';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { MdToHtmlPipe } from './md-to-html.pipe';
     HireComponent,
     ProjectsComponent,
     BlogComponent,
-    MdToHtmlPipe
+    MdToHtmlPipe,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

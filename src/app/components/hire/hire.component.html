@@ -5,9 +5,12 @@
     <div class="card">
         <div class="md-form">
             <form [formGroup]="contactForm">
+                <button routerLink="/home" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
                 <p class="h5 text-center mb-4">Connect with me</p>
                 <p id="email" class="text-center ">e: apavic71@gmail.com</p>
                 <p id="phone" class="text-center ">m: 0404 602 657</p>
+
                 <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
                     <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbInputDirective>
