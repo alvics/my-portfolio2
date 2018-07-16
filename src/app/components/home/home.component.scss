@@ -133,13 +133,45 @@ a:link {
     h4 {
         margin-left: 30px;
     }
+    .fa {
+        font-size: 22px;
+    }
 }
 
-img.displayed {
+.displayed {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -50px;
+    margin: 50px auto;
+}
+
+#icon-rows {
+    margin-top: 160px;
+}
+
+.fa {
+    color: #ff3547;
+    font-size: 70px;
+    text-align: center;
+}
+
+.learn-more {
+    font-weight: bold;
+    color: #ff3547;
+    text-align: center;
+}
+
+
+/* ---------------------------------
+ ----------Icon Rows --------------*/
+
+#icon-rows {
+    .fa {
+        display: block;
+        margin: auto;
+    }
+    h4,
+    p {
+        text-align: center;
+    }
 }
 
 
