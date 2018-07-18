@@ -18,6 +18,7 @@ import { NavbarComponent } from './ui/componets/navbar/navbar.component';
 import { ContentfulService } from './contentful.service';
 import { MdToHtmlPipe } from './md-to-html.pipe';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ModalComponent } from './ui/modal/modal.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ProjectsComponent,
     BlogComponent,
     MdToHtmlPipe,
-    PortfolioComponent
+    PortfolioComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

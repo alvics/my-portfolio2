@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -7,7 +8,7 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  
   modalForm: FormGroup;
 
   constructor(public fb: FormBuilder) {
