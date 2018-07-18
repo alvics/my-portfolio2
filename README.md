@@ -1,4 +1,10 @@
-# StarterMdbootstrap
+# Personal Portfolio Website
+
+## Angular 6 personal project.
+
+### Using MD-Bootstrap for CSS
+
+### Routing 5 pages, using contentful's CMS and WordPress REST API for retrieving data to display in blog and projects pages.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
