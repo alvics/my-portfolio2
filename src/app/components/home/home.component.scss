@@ -44,6 +44,7 @@ ul {
         font-weight: 300;
         color: #424242;
         display: block;
+        font-size: 40px;
     }
     p {
         -webkit-margin-before: 1em;
@@ -79,10 +80,17 @@ a:link {
     width: 100%;
 }
 
+#wd-icons img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 100px;
+}
+
 .section-banner {
-    margin-top: 100px;
-    margin-bottom: 70px;
-    background: linear-gradient(to bottom left, #0078d7, #76c4e2);
+    margin-top: 0px;
+    margin-bottom: -68px;
+    background: linear-gradient(to bottom left, #33b5e5, #add9eb);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -100,7 +108,7 @@ a:link {
         font-size: 14px;
         font-weight: 600;
         line-height: 16px;
-        color: #8176b5;
+        color: #232323;
         width: 40%;
         margin-top: 20px;
         margin-left: 180px;
@@ -153,6 +161,10 @@ a:link {
     text-align: center;
 }
 
+.modal-header {
+    background-color: #33b5e5;
+}
+
 
 /* ---------------------------------
  ----------Icon Rows --------------*/
@@ -179,6 +191,19 @@ a:link {
         margin: 0 auto;
         height: 400px;
         width: 400px;
+    }
+}
+
+.displayed {
+    @media (max-width: 719px) {
+        width: 100%;
+    }
+}
+
+.displayed {
+    @media (min-width: 720px) {
+        width: 80%;
+        padding: 0 25px;
     }
 }
 
