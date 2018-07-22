@@ -1,15 +1,40 @@
-<!-- Comming from Contenful CMS -->
+<!-- Main -->
+<div class="view">
+    <div class="full-bg-img">
+        <div class="mask rgba-black-strong flex-center">
+            <div class="container">
+                <div class="white-text text-center wow fadeInUp">
+                    <h2>Web Developer Gold Coast</h2>
+                    <h5><span style="color:#33b5e5">Projects</span> > AL<span style="color:#33b5e5">LEN</span> PAVIC</h5>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.Main -->
+<div id="projects" class="container">
+    <h2 class=""><span class="me">Projects</span></h2>
+</div>
 
+<app-portfolio></app-portfolio>
+<!-- Comming from Contenful CMS -->
+<!--
 <div id="bck-img">
     <div class="container" *ngFor="let layout of layouts">
         <div class="overlay">
             <h1 class="pt-5">{{ layout.fields.title }}</h1>
             <br>
-            <div id="contentful" [innerHTML]="layout.fields.body | mdToHtml"></div>
+            <div id="contentful" [innerHTML]="layout.fields.body | mdToHtml">
+                <div class="space"></div>
+            </div>  -->
 
-            <!-- <div *ngFor="let i of layout.fields.images">
+
+<!-- <div *ngFor="let i of layout.fields.images">
     <img src="{{ layout.fields.images.fields.file.url }}" />  -->
-        </div>
+<!--  </div>
 
     </div>
-</div>
+</div> -->
+
+<app-footer></app-footer>

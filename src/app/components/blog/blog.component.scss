@@ -1,7 +1,16 @@
+.view {
+    background: url("/assets/images/img2_p.jpg")no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+}
+
 h2 {
-    font-weight: bold;
-    color: #0d30cc;
-    padding: 25px 0;
+    color: #fff;
+}
+
+.container {
+    padding-top: 100px;
+    color: #f8f8f8;
 }
 
 .blog {

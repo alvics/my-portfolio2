@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HireComponent } from './components/hire/hire.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { WebDesignComponent } from './components/pages/web-design/web-design.component';
+import { EcommerceComponent } from './components/pages/ecommerce/ecommerce.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'hire', component: HireComponent },
+  { path: 'webdesign', component: WebDesignComponent },
+  { path: 'ecommerce', component: EcommerceComponent },
   { path: '**', component: HomeComponent }
 ];
 

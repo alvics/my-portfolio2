@@ -17,8 +17,15 @@ import { FooterComponent } from './ui/componets/footer/footer.component';
 import { NavbarComponent } from './ui/componets/navbar/navbar.component';
 import { ContentfulService } from './contentful.service';
 import { MdToHtmlPipe } from './md-to-html.pipe';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ModalComponent } from './ui/modal/modal.component';
+import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
+import { ModalComponent } from './ui/components/modal/modal.component';
+import { EcommerceComponent } from './components/pages/ecommerce/ecommerce.component';
+import { WebDesignComponent } from './components/pages/web-design/web-design.component';
+import { SeoComponent } from './components/pages/seo/seo.component';
+import { ResponsiveWebsitesComponent } from './components/pages/responsive-websites/responsive-websites.component';
+import { WebDevelopmetComponent } from './components/pages/web-developmet/web-developmet.component';
+import { HostingComponent } from './components/pages/hosting/hosting.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -35,7 +42,14 @@ import { ModalComponent } from './ui/modal/modal.component';
     BlogComponent,
     MdToHtmlPipe,
     PortfolioComponent,
-    ModalComponent
+    ModalComponent,
+    EcommerceComponent,
+    WebDesignComponent,
+    SeoComponent,
+    ResponsiveWebsitesComponent,
+    WebDevelopmetComponent,
+    HostingComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

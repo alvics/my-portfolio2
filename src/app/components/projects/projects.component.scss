@@ -1,13 +1,21 @@
-#bck-img {
+/*#bck-img {
     background-image: url('/assets/images/color.jpeg');
     background-position: center center;
     background-size: cover;
     height: 100vh;
     position: relative;
     margin-bottom: 100px;
+} */
+
+.view {
+    background: url("/assets/images/img2_p.jpg")no-repeat center center;
+    background-size: cover;
+    height: 30vh;
 }
 
 .overlay {
+    margin-top: 150px;
+    margin-bottom: 50px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0 55px;
@@ -22,4 +30,24 @@
 #contenful {
     display: block;
     margin: 0 auto;
+}
+
+.space {
+    background-color: red;
+    height: 50px;
+}
+
+#projects {
+    margin-top: -50px;
+    padding-bottom: 40px;
+}
+
+.me {
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    padding-top: 100px;
+    color: #f8f8f8;
 }

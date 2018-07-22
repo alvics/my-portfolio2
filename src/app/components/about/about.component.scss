@@ -1,3 +1,13 @@
+.view {
+    background: url("/assets/images/img2_p.jpg")no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+}
+
+.navbar {
+    z-index: 1;
+}
+
 .container {
     padding-top: 100px;
     color: #f8f8f8;
@@ -9,7 +19,7 @@
 }
 
 h2 {
-    color: #232323;
+    color: #fff;
 }
 
 
@@ -27,13 +37,13 @@ h2 {
 
 @keyframes rainbow {
     0% {
-        background-color: #0078d7;
+        background: linear-gradient(to bottom left, #33b5e5, #add9eb);
     }
     50% {
-        background-color: black;
+        background: linear-gradient(to bottom left, #232323, #add9eb);
     }
     100% {
-        background-color: black;
+        background: linear-gradient(to bottom left, #add9eb, #232323);
     }
 }
 
@@ -57,26 +67,26 @@ h2 {
 
 .me {
     font-weight: bold;
-    color: #0078d7;
+    color: #33b5e5;
 }
 
 .container-fluid {
     text-align: center;
     color: #fff;
-    background-color: #0078d7;
+    background: linear-gradient(to bottom left, #33b5e5, #add9eb);
     padding: 35px 250px;
     margin-top: 110px;
-    margin-bottom: 80px;
+    margin-bottom: -80px;
 }
 
 @keyframes rainbow2 {
     0% {
-        background-color: black;
+        background-color: #232323;
     }
     50% {
-        background-color: black;
+        background: linear-gradient(to bottom left, #add9eb, #232323, );
     }
     100% {
-        background-color: #0078d7;
+        background: linear-gradient(to bottom left, #33b5e5, #add9eb);
     }
 }

@@ -167,7 +167,7 @@ a:link {
 
 
 /* ---------------------------------
- ----------Icon Rows --------------*/
+ ----------Icon Rows -------------- */
 
 #icon-rows {
     .fa {
@@ -192,6 +192,11 @@ a:link {
         height: 400px;
         width: 400px;
     }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 .displayed {
