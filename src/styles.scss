@@ -1,3 +1,58 @@
+.view {
+    background: url("/assets/images/img2_p.jpg")no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+    border-bottom: solid 3px #33b5e5;
+}
+
+.white-text {
+    padding-bottom: 70px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-top: -40px;
+    }
+    h4 {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 50px;
+    }
+    h5,
+    p {
+        color: #232323;
+        margin-left: -270px;
+        padding-right: 125px;
+    }
+    .material-icons {
+        font-size: 50px;
+    }
+}
+
+#whyus {
+    h5,
+    p {
+        padding: 0;
+        padding-left: 400px;
+    }
+}
+
+h5 {
+    font-size: 22px;
+}
+
+#mocks {
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        width: 400px;
+        padding: 0;
+    }
 }

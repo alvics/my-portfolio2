@@ -1,3 +1,4 @@
+import { WebDevelopmetComponent } from './components/pages/web-developmet/web-developmet.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,6 +11,7 @@ import { EcommerceComponent } from './components/pages/ecommerce/ecommerce.compo
 import { SeoComponent } from './components/pages/seo/seo.component';
 import { WebDesignComponent } from './components/pages/web-design/web-design.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ResponsiveWebsitesComponent } from './components/pages/responsive-websites/responsive-websites.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,9 +20,11 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'hire', component: HireComponent },
-  { path: 'webdesign', component: WebDesignComponent },
+  { path: 'web-design', component: WebDesignComponent },
   { path: 'ecommerce', component: EcommerceComponent },
   { path: 'seo', component: SeoComponent },
+  { path: 'responsive-websites', component: ResponsiveWebsitesComponent },
+  { path: 'web-development', component: WebDevelopmetComponent },
   { path: '**', component: HomeComponent }
 ];
 

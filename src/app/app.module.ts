@@ -13,8 +13,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { HireComponent } from './components/hire/hire.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { FooterComponent } from './ui/componets/footer/footer.component';
-import { NavbarComponent } from './ui/componets/navbar/navbar.component';
+import { FooterComponent } from './ui/components/footer/footer.component';
+import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { ContentfulService } from './contentful.service';
 import { MdToHtmlPipe } from './md-to-html.pipe';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
@@ -25,7 +25,7 @@ import { SeoComponent } from './components/pages/seo/seo.component';
 import { ResponsiveWebsitesComponent } from './components/pages/responsive-websites/responsive-websites.component';
 import { WebDevelopmetComponent } from './components/pages/web-developmet/web-developmet.component';
 import { HostingComponent } from './components/pages/hosting/hosting.component';
-import { HeaderComponent } from './components/header/header.component';
+
 
 
 @NgModule({
@@ -49,7 +49,7 @@ import { HeaderComponent } from './components/header/header.component';
     ResponsiveWebsitesComponent,
     WebDevelopmetComponent,
     HostingComponent,
-    HeaderComponent
+    
   ],
   imports: [
     BrowserModule,

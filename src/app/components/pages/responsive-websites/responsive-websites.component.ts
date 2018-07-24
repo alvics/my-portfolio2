@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './responsive-websites.component.html',
   styleUrls: ['./responsive-websites.component.scss']
 })
-export class ResponsiveWebsitesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ResponsiveWebsitesComponent {
+title = "Responsive";
 }
