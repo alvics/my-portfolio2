@@ -30,7 +30,7 @@
     "jquery": "^3.3.1",
     "marked": "^0.4.0",
     "material-design-icons": "^3.0.1",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -52,6 +52,10 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
+<<<<<<< HEAD
     "typescript": "^2.7.2"
+=======
+    "typescript": "~2.9.2"
+>>>>>>> ba69358fbfa579b40c8f6ea908bc05042cc16097
   }
 }
