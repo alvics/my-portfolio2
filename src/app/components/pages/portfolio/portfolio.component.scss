@@ -2,9 +2,31 @@
     img {
         display: block;
         margin: 0 auto;
-        height: 400px;
-        width: 400px;
+        width: 425px;
     }
+}
+
+h5 {
+    background-color: #33b5e5;
+    margin-bottom: -2px;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    width: 1184px;
+}
+
+.background-image {
+    background: url('/assets/images/color.jpeg')no-repeat center center;
+}
+
+.container-fluid {
+    padding-bottom: 60px;
+    margin-bottom: -65px;
+}
+
+.modal-content {
+    border: 0;
+    width: fit-content;
 }
 
 .btn {
@@ -12,4 +34,16 @@
     margin: 0 auto;
     background-color: #33b5e5;
     color: #fff;
+}
+
+.bottomsubhead {
+    color: #232323;
+    text-align: center;
+    h6 {
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    p {
+        font-size: 16px;
+    }
 }

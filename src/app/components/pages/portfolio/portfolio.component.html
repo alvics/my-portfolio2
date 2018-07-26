@@ -1,38 +1,49 @@
 <!-- LAPTOP MOCKUPS -->
-<div id="mocks" class="container-fluid" style="background-color: #f2f2f2">
-    <div class="container mb-5" style="background-color: #f2f2f2">
-        <h3 id="projects" class="pt-5">Portfolio</h3>
-        <div class="row">
-
-            <div class="col-md-4" mdbTooltip="Angular-Project" placement="left">
-                <a data-toggle="modal" data-target="#mock4"><img src="assets/images/mocks/moll.png"></a>
-            </div>
-            <div class="col-md-4" mdbTooltip="Angular-Project" placement="top">
-                <a data-toggle="modal" data-target="#mock5"><img src="assets/images/mocks/malp.png"></a>
-            </div>
-            <div class="col-md-4" mdbTooltip="Angular-Project" placement="right">
-                <a data-toggle="modal" data-target="#mock6"><img src="assets/images/mocks/pure.jpg"></a>
-            </div>
-        </div>
+<div id="mocks" class="container-fluid">
+    <div class="background-image">
+        <div class="container mb-5">
+            <h3 id="projects" class="pt-5">Portfolio</h3>
+            <h5>Angular</h5>
 
 
+            <div class="row">
+
+                <div class="col-md-4" mdbTooltip="Angular-Project" placement="left">
+                    <a data-toggle="modal" data-target="#mock4"><img src="assets/images/mocks/moll.png"></a>
+                </div>
+                <div class="col-md-4" mdbTooltip="Angular-Project" placement="top">
+                    <a data-toggle="modal" data-target="#mock5"><img src="assets/images/mocks/malp.png"></a>
+                </div>
+                <div class="col-md-4" mdbTooltip="Angular-Project" placement="right">
+                    <a data-toggle="modal" data-target="#mock6"><img src="assets/images/mocks/pure.jpg"></a>
+                </div>
+
+            </div>
 
 
-        <div class="row">
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="left">
-                <a data-toggle="modal" data-target="#mock1"><img src="assets/images/mocks/mcascade.png"></a>
-            </div>
-            <app-modal></app-modal>
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="top">
-                <a data-toggle="modal" data-target="#mock2"><img src="assets/images/mocks/mewd.png"></a>
+
+            <h5>WordPress</h5>
+            <div class="row">
+                <div class="col-md-4" mdbTooltip="WordPress-Project" placement="left">
+                    <a data-toggle="modal" data-target="#mock1"><img src="assets/images/mocks/mcascade.png"></a>
+                </div>
+                <app-modal></app-modal>
+                <div class="col-md-4" mdbTooltip="WordPress-Project" placement="top">
+                    <a data-toggle="modal" data-target="#mock2"><img src="assets/images/mocks/mewd.png"></a>
+                </div>
+
+                <div class="col-md-4" mdbTooltip="WordPress-Project" placement="right">
+                    <a data-toggle="modal" data-target="#mock3"><img src="assets/images/mocks/msb.png"></a>
+                </div>
             </div>
 
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="right">
-                <a data-toggle="modal" data-target="#mock3"><img src="assets/images/mocks/msb.png"></a>
-            </div>
         </div>
     </div>
+    <div class="bottomsubhead">
+        <h6>Specializing in Blazing-Fast high quality website</h6>
+        <p>Request a quote</p>
+    </div>
+    <button routerLink="/contact" class="btn">get a quote</button>
 </div>
-<button class="btn mt-5" waves-light mdbWavesEffect routerLink="/contact">Get a Quote</button>
 
 <app-modal></app-modal>

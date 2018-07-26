@@ -10,7 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { EcommerceComponent } from './components/pages/ecommerce/ecommerce.component';
 import { SeoComponent } from './components/pages/seo/seo.component';
 import { WebDesignComponent } from './components/pages/web-design/web-design.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ResponsiveWebsitesComponent } from './components/pages/responsive-websites/responsive-websites.component';
 
 const routes: Routes = [

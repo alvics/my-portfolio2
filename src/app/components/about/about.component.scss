@@ -12,6 +12,10 @@ h2 {
     color: #fff;
 }
 
+.background-image {
+    background: url('/assets/images/aboutme.png')no-repeat center center;
+}
+
 
 /* #col1 {
     background-image: linear-gradient(90deg, aquamarine, #0a9f8f);
@@ -71,10 +75,10 @@ h2 {
 
 @keyframes rainbow2 {
     0% {
-        background-color: #232323;
+        background: linear-gradient(to bottom left, #33b5e5, #add9eb);
     }
     50% {
-        background: linear-gradient(to bottom left, #add9eb, #232323, );
+        background: linear-gradient(to bottom left, #add9eb, #232323);
     }
     100% {
         background: linear-gradient(to bottom left, #33b5e5, #add9eb);
