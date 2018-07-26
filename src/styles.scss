@@ -3,6 +3,7 @@
     background-size: cover;
     height: 30vh;
     border-bottom: solid 3px #33b5e5;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .white-text {
@@ -45,14 +46,4 @@ body {
 
 h5 {
     font-size: 22px;
-}
-
-#mocks {
-    img {
-        display: block;
-        margin: 0 auto;
-        height: 400px;
-        width: 400px;
-        padding: 0;
-    }
 }

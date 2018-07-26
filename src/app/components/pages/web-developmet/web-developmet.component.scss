@@ -2,3 +2,64 @@
     padding-top: 100px;
     color: #f8f8f8;
 }
+
+#row2 {
+    margin-top: -230px;
+}
+
+#row3 {
+    h5,
+    p {
+        text-align: center;
+        color: #232323;
+    }
+    h5 {
+        margin: 15px 0;
+    }
+    p {
+        background-color: #f8f8f8;
+        border-bottom: solid 3px #33b5e5;
+        padding: 20px 0;
+    }
+    .material-icons {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+        color: #33b5e5;
+    }
+}
+
+#mocks {
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        width: 400px;
+        padding: 0 0;
+    }
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #33b5e5;
+}
+
+.container-fluid {
+    margin-bottom: -66px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bottomsubhead {
+    color: #232323;
+    text-align: center;
+    h6 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hosting.component.scss']
 })
 export class HostingComponent implements OnInit {
-
+title = 'Web hosting';
   constructor() { }
 
   ngOnInit() {

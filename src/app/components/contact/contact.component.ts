@@ -7,6 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  name = 'Contact';
 
   contactForm: FormGroup;
 
@@ -18,4 +19,5 @@ export class ContactComponent {
             contactFormMessage: ['', Validators.required]
         });
     }
+    
   }
