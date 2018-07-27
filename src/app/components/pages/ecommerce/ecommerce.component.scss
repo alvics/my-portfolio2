@@ -3,6 +3,50 @@
     color: #f8f8f8;
 }
 
+
+/* Box-Container */
+
+.box-container {
+    ul {
+        color: #232323;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .material-icons {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .li-text {
+        margin-left: 8px;
+    }
+    .li-header {
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: -15px;
+    }
+    .li-text {
+        padding: 5px;
+        padding-left: 45px;
+        margin-top: -40px;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+    .material-icons {
+        margin-top: 20px;
+        margin-left: -45px;
+    }
+    .li-header {
+        margin-left: 50px;
+        margin-bottom: -50px;
+    }
+}
+
+
+/*  /.End Box-Container */
+
 #row2 {
     margin-top: -200px;
 }

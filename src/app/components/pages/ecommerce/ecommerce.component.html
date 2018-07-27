@@ -15,46 +15,51 @@
 <!-- /.Main -->
 
 
-
+<!-- MAIN CONTAINER -->
 <div id="main" class="container">
+    <!-- HEADING -->
     <h1 style="color:#232323">{{ title }} Websites by AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
     <h4 style="color:#232323">Fully functional online store</h4>
 
-    <div class="row">
-        <div class="col">
-            <i class="material-icons" style="color: #33b5e5">shopping_cart</i>
+    <!-- LEFT 3 ROW ICONS / RIGHT SIDE IMAGE -->
+    <div class="box-container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <span class="li-header"> Building online eCommerce stores</span>
+                    <li><i class="material-icons" style="color: #33b5e5">
+                        shopping_cart
+                        </i>
+                    </li>
+                    <br><span class="li-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi.</span>
+                    <span class="li-header">Website support</span>
+                    <li><i class="material-icons" style="color: #33b5e5">
+                        headset_mic
+                        </i>
+                    </li>
+                    <br>
+                    <span class="li-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi..</span>
+                    <span class="li-header"> For Mobile & Desktop</span>
+                    <li><i class="material-icons" style="color: #33b5e5">
+                       devices
+                        </i>
+                    </li>
+                    <br>
+                    <span class="li-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi.
+                    </span>
+                </ul>
+            </div>
+            <!-- IMAGE RIGHT-SIDE -->
+            <div class="col-md-6 mt-4">
+                <div id="responsive" class="col-md-4 col-sm-12"><img srcset="assets/pages/ecommerce.jpeg" width="500" sizes="(max-width: 474px) 100vw, 474px" alt="">
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-            <h5>Building professional online eCommerce stores</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi.</p>
-        </div>
-        <div class="col-md-4 col-sm-12"><img srcset="assets/pages/ecommerce.jpeg" width="500" sizes="(max-width: 474px) 100vw, 474px" alt=""></div>
+        <!-- /.END LEFT 3 ROW ICONS / RIGHT SIDE IMAGE -->
     </div>
-    <div id="row2" class="row">
-        <div class="col mt-3">
-            <i class="material-icons" style="color: #33b5e5">
-                headset_mic
-                </i>
-        </div>
-        <div class="col-md-4 col-sm-12 mt-3">
-            <h5>Website support</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi.</p>
-        </div>
-        <div class="col-md-4 col-sm-12"></div>
-    </div>
-    <div class="row">
-        <div class="col mt-3">
-            <i class="material-icons" style="color: #33b5e5">
-                person_outline
-                </i>
-        </div>
-        <div class="col-md-4 col-sm-12 mt-3">
-            <h5>Local development</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus sed nostrum magnam soluta ullam ratione nulla quis voluptatem sequi.</p>
-        </div>
-        <div class="col-md-4 col-sm-12"></div>
-    </div>
+    <!-- /.END BOX-CONTAINER -->
 
+    <!-- ECOMMERCE-IMAGE / TEXT-ROW -->
     <div class="row mt-5">
         <div class="col-md-6 col-sm-12"><img src="assets/pages/websites2.png" width="500" alt=""></div>
         <div id="whyus" class="col-md-6 col-sm-12">
@@ -63,8 +68,13 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil optio sapiente blanditiis modi animi beatae ullam nostrum tenetur quam dicta.</p>
         </div>
     </div>
+    <!-- /.END ECOMMERCE-IMAGE / TEXT-ROW-->
 </div>
+<!-- /.END MAIN CONTAINER -->
+
+<!-- ROW 3 CONTAINER -->
 <div class="container">
+    <!-- ROW 3 -->
     <div id="row3" class="row mt-5">
         <div class="col-md-4"><i class="fa fa-credit-card-alt mb-3" aria-hidden="true"></i>
             <h5 class="mt3">Take online payments</h5>
@@ -79,14 +89,17 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequuntur nisi temporibus ducimus, ab ut!</p>
         </div>
     </div>
+    <!-- /.END ROW3 -->
+
+    <!-- CALL TO ACTION -->
     <div class="bottomsubhead">
         <h6>Specializing in Blazing-Fast high quality website</h6>
         <p>Request a quote</p>
     </div>
     <button routerLink="/contact" class="btn">get a quote</button>
+    <!-- /.END CALL TO ACTION -->
 </div>
+<!-- /.END ROW 3 CONTAINER -->
 
-
-
-
+<!-- FOOTER -->
 <app-footer></app-footer>

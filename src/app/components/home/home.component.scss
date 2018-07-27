@@ -104,27 +104,9 @@ a:link {
         font-family: "Open Sans", sans-serif;
     }
     .btn {
-        color: #fff;
-        font-size: 14px;
+        background-color: white !important;
+        float: right;
         font-weight: 600;
-        line-height: 16px;
-        color: #232323;
-        width: 40%;
-        margin-top: 20px;
-        margin-left: 180px;
-        background-color: #fff;
-    }
-    a:link {
-        color: #8176b5;
-        text-decoration: none;
-    }
-    a:visited {
-        color: #3475c0;
-        font-weight: 300;
-    }
-    .btn:hover {
-        background-color: #d3d3d3;
-        cursor: pointer;
     }
 }
 
@@ -163,6 +145,13 @@ a:link {
 
 .modal-header {
     background-color: #33b5e5;
+}
+
+#btn {
+    display: block;
+    margin: 30px auto;
+    background-color: #33b5e5;
+    font-weight: 600;
 }
 
 

@@ -1,49 +1,95 @@
-.view {
-    background: url("/assets/images/img2_p.jpg")no-repeat center center;
-    background-size: cover;
-    height: 30vh;
-    border-bottom: solid 3px #33b5e5;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.white-text {
-    padding-bottom: 70px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-#main {
-    h1 {
-        text-align: center;
-        font-size: 36px;
-        margin-top: -40px;
+    .view {
+        background: url("/assets/images/img2_p.jpg")no-repeat center center;
+        background-size: cover;
+        height: 30vh;
+        border-bottom: solid 3px #33b5e5;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
-    h4 {
-        text-align: center;
-        margin-bottom: 40px;
-        padding-bottom: 50px;
+    
+    .white-text {
+        padding-bottom: 70px;
     }
-    h5,
-    p {
-        color: #232323;
-        margin-left: -270px;
-        padding-right: 125px;
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
     }
-    .material-icons {
-        font-size: 50px;
+    
+    #main {
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: -40px;
+        }
+        h4 {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 50px;
+        }
+        h5,
+        p {
+            color: #232323;
+            margin-left: -270px;
+            padding-right: 125px;
+        }
+        .material-icons {
+            font-size: 50px;
+        }
     }
-}
-
-#whyus {
-    h5,
-    p {
-        padding: 0;
-        padding-left: 400px;
+    
+    #whyus {
+        h5,
+        p {
+            padding: 0;
+            padding-left: 400px;
+        }
     }
-}
-
-h5 {
-    font-size: 22px;
-}
+    
+    h5 {
+        font-size: 22px;
+    }
+    /* =====================
+---- MEDIA QUERIES -----
+======================*/
+    
+    @media (max-width:450px) {
+        .view {
+            background: url("/assets/images/hero1.jpeg")no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 70vh;
+        }
+        .white-text {
+            h5,
+            p {
+                display: none;
+            }
+            .btn-danger {
+                margin-top: 80px;
+            }
+            h2 {
+                text-align: center;
+                padding-bottom: 35px;
+                margin-bottom: -120px;
+                padding-bottom: 35px;
+                margin-top: -150px;
+            }
+        }
+        #whyus {
+            h5,
+            li {
+                color: #232323;
+                text-align: center;
+                margin-left: 10px;
+                padding: 0 5px;
+            }
+        }
+        #responsiveWebsites {
+            width: 75%;
+        }
+        #mocks img {
+            width: 50%;
+            margin-left: -60px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
