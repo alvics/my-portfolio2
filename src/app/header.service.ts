@@ -9,6 +9,7 @@ title: string;
 image: string;
 h2: string;
 h5: string;
+string =  'blog';
 
    // Shared data between any unrelated components / (Any => Any) 
   // For data to be insnyc using BehaviorSubject from rxjs

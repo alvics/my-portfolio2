@@ -4,9 +4,15 @@
 }
 
 .view {
-    background: url("/assets/images/hero1.jpeg")no-repeat center center;
+    background: url("/assets/images/img2_p.jpg")no-repeat center center;
     background-size: cover;
     height: 70vh;
+}
+
+.view {
+    .white-text {
+        margin-top: -60px;
+    }
 }
 
 .container {

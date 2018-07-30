@@ -25,6 +25,9 @@ import { MdToHtmlPipe } from './md-to-html.pipe';
 import { FooterComponent } from './ui/components/footer/footer.component';
 import { ModalComponent } from './ui/components/modal/modal.component';
 import { NavbarComponent } from './ui/components/navbar/navbar.component';
+import { PaginationComponent } from './ui/components/pagination/pagination.component';
+
+
 
 
 
@@ -50,6 +53,9 @@ import { NavbarComponent } from './ui/components/navbar/navbar.component';
     WebDevelopmetComponent,
     HostingComponent,
     HeaderComponent,
+    PaginationComponent,
+  
+   
     
   ],
   imports: [

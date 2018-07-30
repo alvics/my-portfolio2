@@ -1,13 +1,14 @@
     .view {
-        background: url("/assets/images/img2_p.jpg")no-repeat center center;
+        background: url("/assets/images/hero2.jpeg")no-repeat center center;
         background-size: cover;
-        height: 30vh;
+        height: 50vh;
         border-bottom: solid 3px #33b5e5;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
-    /*.white-text {
+    
+    .white-text {
         padding-bottom: 70px;
-    }*/
+    }
     
     body {
         font-family: 'Montserrat', sans-serif;
@@ -45,6 +46,16 @@
     
     h5 {
         font-size: 22px;
+    }
+    
+    .pagination {
+        float: right;
+        padding-right: 60px;
+    }
+    
+    a.page-link:visited {
+        color: #232323 !important;
+        background-color: #33b5e5 !important;
     }
     /* =====================
 ---- MEDIA QUERIES -----
