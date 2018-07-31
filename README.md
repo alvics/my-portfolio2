@@ -4,7 +4,8 @@
 
 ### Using MD-Bootstrap for CSS
 
-### Routing 5 pages, using contentful's CMS and WordPress REST API for retrieving data to display in blog and projects pages.
+### Routing 5 pages, testing contentful's CMS and WordPress REST API for retrieving data to display in blog page.
+### wordpress is a little slower? might be using contentful.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
