@@ -1,0 +1,18 @@
+.pagination {
+    float: right;
+    padding-right: 60px;
+}
+
+a.page-link {
+    color: #232323 !important;
+}
+
+a.page-link:visited {
+    color: #33b5e5 !important;
+    background-color: #ccc !important;
+}
+
+a.page-link:hover {
+    color: #fff !important;
+    background-color: #ccc !important;
+}

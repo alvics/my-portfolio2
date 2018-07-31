@@ -15,14 +15,9 @@ h2 {
     color: #f8f8f8;
 }
 
-.blog {
-    font-weight: bold;
-    color: #232323;
-}
-
 .overlay {
     color: #fff;
-    background-color: rgba(0, 0, 255, 0.7);
+    background-color: #33b5e5;
     padding: 30px 55px;
     top: 0;
     left: 0;
@@ -30,8 +25,4 @@ h2 {
     height: 100%;
     position: relative;
     z-index: 1;
-}
-
-pre.language-markup {
-    color: #fff !important;
 }
