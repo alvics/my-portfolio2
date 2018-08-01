@@ -18,10 +18,12 @@
     <div class="overlay">
         <ul>
             <li *ngFor="let post of posts$">
-                <h3>
+                <h1>
                     <div [innerHTML]="post.title.rendered"></div>
-                </h3>
-                <div [innerHTML]="post.content.rendered"></div>
+                </h1>
+
+                <p [innerHTML]="post.content.rendered"></p>
+
             </li>
         </ul>
     </div>

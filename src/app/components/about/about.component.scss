@@ -1,90 +1,117 @@
-.view {
-    background: url("/assets/images/img2_p.jpg")no-repeat center center;
-    background-size: cover;
-    height: 50vh;
-    border-bottom: solid 3px #33b5e5;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.container {
-    padding-top: 100px;
-    color: #f8f8f8;
-}
-
-.fcc {
-    font-weight: bold;
-    color: #006400;
-}
-
-h2 {
-    color: #fff;
-}
-
-
-/* #col1 {
+    .view {
+        background: url("/assets/images/img2_p.jpg")no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+        border-bottom: solid 3px #33b5e5;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    
+    .container {
+        padding-top: 40px;
+        color: #f8f8f8;
+    }
+    
+    #wd-icons img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 40px;
+        height: 120px;
+    }
+    
+    hr {
+        margin-top: 40px;
+    }
+    
+    .fcc {
+        font-weight: bold;
+        color: #006400;
+    }
+    
+    h2 {
+        color: #fff;
+    }
+    /* #col1 {
     background-image: linear-gradient(90deg, aquamarine, #0a9f8f);
     padding: 50px 25px;
 } */
-
-#col1 {
-    padding: 50px 45px;
-    animation-name: rainbow;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rainbow {
-    0% {
-        background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+    
+    #col1 {
+        padding: 50px 45px;
+        animation-name: rainbow;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
-    50% {
-        background: linear-gradient(to bottom left, #232323, #add9eb);
+    
+    @keyframes rainbow {
+        0% {
+            background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+        }
+        50% {
+            background: linear-gradient(to bottom left, #232323, #add9eb);
+        }
+        100% {
+            background: linear-gradient(to bottom left, #add9eb, #232323);
+        }
     }
-    100% {
-        background: linear-gradient(to bottom left, #add9eb, #232323);
-    }
-}
-
-
-/* #col2 {
+    /* #col2 {
     background-image: linear-gradient(90deg, bisque, orange);
     padding: 50px 45px;
 } */
-
-#col2 {
-    padding: 50px 45px;
-    animation-name: rainbow2;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-.about {
-    font-weight: bold;
-    color: black;
-}
-
-.me {
-    font-weight: bold;
-    color: #33b5e5;
-}
-
-.container-fluid {
-    text-align: center;
-    color: #fff;
-    background: linear-gradient(to bottom left, #33b5e5, #add9eb);
-    padding: 35px 250px;
-    margin-top: 110px;
-    margin-bottom: -80px;
-}
-
-@keyframes rainbow2 {
-    0% {
+    
+    #col2 {
+        padding: 50px 45px;
+        animation-name: rainbow2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+    
+    .about {
+        font-weight: bold;
+        color: black;
+    }
+    
+    .me {
+        font-weight: bold;
+        color: #33b5e5;
+    }
+    
+    .container-fluid {
+        text-align: center;
+        color: #fff;
         background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+        padding: 35px 250px;
+        margin-top: 110px;
+        margin-bottom: -80px;
+        width: 100vw;
     }
-    50% {
-        background: linear-gradient(to bottom left, #add9eb, #232323);
+    
+    #magpies,
+    #qld,
+    #liverpool {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: -30px
     }
-    100% {
-        background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+    
+    @keyframes rainbow2 {
+        0% {
+            background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+        }
+        50% {
+            background: linear-gradient(to bottom left, #add9eb, #232323);
+        }
+        100% {
+            background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+        }
     }
-}
+    
+    @media (max-width:730px) {
+        #other-interests {
+            padding: 10px 35px;
+            margin-bottom: 20px;
+            margin-left: -50px;
+            width: 100vw;
+        }
+    }

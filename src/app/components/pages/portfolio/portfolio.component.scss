@@ -58,6 +58,7 @@ h5 {
 }*/
 
 .container-fluid {
+    margin-top: 50px;
     padding-bottom: 60px;
     margin-bottom: -65px;
 }
@@ -76,16 +77,16 @@ h5 {
 }
 
 .bottomsubhead {
-    color: #fff;
+    color: #232323;
     text-align: center;
-    background-color: #33b5e5;
+    background-color: #fff;
     opacity: 0.8;
     padding-top: 5px;
     padding-bottom: 50px;
-    margin-bottom: -63px;
     margin-top: -50px;
     margin-left: -20px;
     margin-right: -20px;
+    margin-bottom: 5px;
     position: relative;
     h6 {
         font-size: 30px;
@@ -95,4 +96,16 @@ h5 {
     p {
         font-size: 16px;
     }
+}
+
+.fa {
+    color: #000;
+}
+
+.fa:hover {
+    color: #33b5e5;
+}
+
+.fa:visited {
+    color: #33b5e5 !important;
 }

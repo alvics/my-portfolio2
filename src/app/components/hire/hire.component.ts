@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./hire.component.scss']
 })
 export class HireComponent {
-
+name = "Hire me";
   contactForm: FormGroup;
 
     constructor(private fb: FormBuilder) {

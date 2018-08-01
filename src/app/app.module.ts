@@ -9,8 +9,8 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component';
+import { HeaderComponent } from './ui/components/header/header.component';
+import { HeroComponent } from './ui/components/hero/hero.component';
 import { HireComponent } from './components/hire/hire.component';
 import { HomeComponent } from './components/home/home.component';
 import { EcommerceComponent } from './components/pages/ecommerce/ecommerce.component';
@@ -26,6 +26,7 @@ import { FooterComponent } from './ui/components/footer/footer.component';
 import { ModalComponent } from './ui/components/modal/modal.component';
 import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
+import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 
 
 
@@ -54,6 +55,7 @@ import { PaginationComponent } from './ui/components/pagination/pagination.compo
     HostingComponent,
     HeaderComponent,
     PaginationComponent,
+    ContactModalComponent,
   
    
     

@@ -1,5 +1,5 @@
-import { ProjectsComponent } from './../pages/projects/projects.component';
-import { HeaderService } from './../../header.service';
+import { ProjectsComponent } from '../../../components/pages/projects/projects.component';
+import { HeaderService } from '../../../header.service';
 import { Component, OnInit  } from '@angular/core';
 
 @Component({
