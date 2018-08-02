@@ -1,5 +1,7 @@
 import { Component,  } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hire',
@@ -7,10 +9,17 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./hire.component.scss']
 })
 export class HireComponent {
-name = "Hire me";
+  name = "Hire me";
+  itemName = '';
+  itemEmail = '';
+  itemSubject = '';
+  itemMessage = '';
+  items: Observable<any[]>;
   contactForm: FormGroup;
 
-    constructor(private fb: FormBuilder) {
+    constructor(private fb: FormBuilder, private db: AngularFireDatabase) {
+      this.items = db.list('messages').valueChanges();
+
         this.contactForm = fb.group({
             contactFormName: ['', Validators.required],
             contactFormEmail: ['', [Validators.required, Validators.email]],
@@ -18,4 +27,7 @@ name = "Hire me";
             contactFormMessage: ['', Validators.required]
         });
     }
+    onSubmit() {
+      this.db.list('/messages').push({ name: this.itemName, email: this.itemEmail, subject: this.itemSubject, message: this.itemMessage});
+      }
   }

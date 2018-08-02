@@ -1,15 +1,14 @@
-import { AngularFireDatabase } from 'angularfire2/database';
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
 import { FormControl, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 
-@Component({
-  selector: 'app-contact-modal',
-  templateUrl: './contact-modal.component.html',
-  styleUrls: ['./contact-modal.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class ContactModalComponent {
-  itemName = '';
+export class ContactFormService {
+
+itemName = '';
   itemEmail = '';
   itemSubject = '';
   itemMessage = '';
@@ -28,4 +27,4 @@ constructor(private db: AngularFireDatabase) {
  onSubmit() {
     this.db.list('/messages').push({ name: this.itemName, email: this.itemEmail, subject: this.itemSubject, message: this.itemMessage});
     }
-}
+}  

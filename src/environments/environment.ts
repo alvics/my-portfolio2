@@ -4,6 +4,14 @@
 
 export const environment = {
   production: false,
+  firebase: {
+      apiKey: "AIzaSyDJITLdKvU5_pVy2JBq98ZW4KcW7se8Nq4",
+  authDomain: "contact-form-32637.firebaseapp.com",
+  databaseURL: "https://contact-form-32637.firebaseio.com",
+  projectId: "contact-form-32637",
+  storageBucket: "",
+  messagingSenderId: "891796431151"
+},
 
 
 contentful: {

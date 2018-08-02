@@ -3,6 +3,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +30,7 @@ import { ModalComponent } from './ui/components/modal/modal.component';
 import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
+import { ComponentsComponent } from './components/components.component';
 
 
 
@@ -56,6 +60,7 @@ import { ContactModalComponent } from './ui/components/contact-modal/contact-mod
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
+    ComponentsComponent,
   
    
     
@@ -65,7 +70,10 @@ import { ContactModalComponent } from './ui/components/contact-modal/contact-mod
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
+    AngularFireModule,
+    AngularFireDatabaseModule, 
     MDBBootstrapModule.forRoot()
   ], 
   schemas: [ NO_ERRORS_SCHEMA ],

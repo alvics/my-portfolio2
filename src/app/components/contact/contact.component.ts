@@ -1,5 +1,8 @@
+
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -8,10 +11,17 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class ContactComponent {
   name = 'Contact';
+  itemName = '';
+  itemEmail = '';
+  itemSubject = '';
+  itemMessage = '';
+  items: Observable<any[]>;
 
   contactForm: FormGroup;
 
-    constructor(private fb: FormBuilder) {
+    constructor(private fb: FormBuilder, private db: AngularFireDatabase) {
+      this.items = db.list('messages').valueChanges();
+
         this.contactForm = fb.group({
             contactFormName: ['', Validators.required],
             contactFormEmail: ['', [Validators.required, Validators.email]],
@@ -20,4 +30,7 @@ export class ContactComponent {
         });
     }
     
+    onSubmit() {
+      this.db.list('/messages').push({ name: this.itemName, email: this.itemEmail, subject: this.itemSubject, message: this.itemMessage});
+      }
   }
