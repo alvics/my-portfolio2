@@ -6,6 +6,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { ComponentsComponent } from './components/components.component';
+import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
 
 
 
@@ -61,6 +63,7 @@ import { ComponentsComponent } from './components/components.component';
     PaginationComponent,
     ContactModalComponent,
     ComponentsComponent,
+    GoogleMapsComponent,
   
    
     
@@ -74,6 +77,9 @@ import { ComponentsComponent } from './components/components.component';
     AppRoutingModule,
     AngularFireModule,
     AngularFireDatabaseModule, 
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCRlY4Es8lcVZqF344b6qay5S3BczGEA9o'
+    }),
     MDBBootstrapModule.forRoot()
   ], 
   schemas: [ NO_ERRORS_SCHEMA ],

@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-      apiKey: "AIzaSyDJITLdKvU5_pVy2JBq98ZW4KcW7se8Nq4",
-  authDomain: "contact-form-32637.firebaseapp.com",
-  databaseURL: "https://contact-form-32637.firebaseio.com",
-  projectId: "contact-form-32637",
-  storageBucket: "",
-  messagingSenderId: "891796431151"
+    apiKey: "AIzaSyAk5cyY4nAMJIAVuKOcPJxSmO9TDXny66Y",
+    authDomain: "allen-portfolio.firebaseapp.com",
+    databaseURL: "https://allen-portfolio.firebaseio.com",
+    projectId: "allen-portfolio",
+    storageBucket: "allen-portfolio.appspot.com",
+    messagingSenderId: "1012007408353"
 },
 
 

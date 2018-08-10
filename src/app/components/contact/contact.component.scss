@@ -1,88 +1,98 @@
 .view {
-    background: url("/assets/images/gc1.jpg")no-repeat center center;
-    background-size: cover;
-    height: 50vh;
-    border-bottom: solid 3px #33b5e5;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: url("/assets/images/gc1.jpg")no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  border-bottom: solid 3px #33b5e5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 h1 {
-    margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .modal-header {
-    margin: 0 auto;
-    width: 100%;
-    background-color: #33b5e5;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #33b5e5;
 }
 
 .btn {
-    background-color: #33b5e5;
+  background-color: #33b5e5;
 }
 
 .container {
-    padding-top: 100px;
+  padding-top: 40px;
 }
 
 .card {
-    padding: 15px 30px;
-    width: 100%;
-    margin: auto;
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
 }
 
 #email,
 #phone {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: .5em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: .5em;
 }
 
 span.x {
-    color: #fff;
+  color: #fff;
 }
 
 .bottomsubhead {
-    color: #232323;
-    text-align: center;
-    background-color: #fff;
-    opacity: 0.8;
-    padding-top: 5px;
-    margin-top: -50px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: 5px;
-    position: relative;
-    h6 {
-        font-size: 30px;
-        margin-top: 60px;
-        font-weight: 900;
-    }
-    p {
-        font-size: 16px;
-    }
+  color: #232323;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.8;
+  padding-top: 5px;
+  margin-top: -50px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 5px;
+  position: relative;
+  h6 {
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+#location {
+  margin-bottom: -40px;
+}
+
+.services {
+  padding-left: 80px;
+  margin-top: 50px;
 }
 
 @media (max-width:1000px) {
-    .card {
-        width: 100%;
-        padding: 0 40px;
-    }
-    .modal-header {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .bck-img {
-        display: hidden;
-    }
+  .card {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .modal-header {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .bck-img {
+    display: hidden;
+  }
 }
 
 @media (max-width: 400px) {
-    .card {
-        width: 100%;
-        padding: 0 30px;
-    }
-    .modal-header {
-        margin: 0 auto;
-        width: 100%;
-    }
+  .card {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .modal-header {
+    margin: 0 auto;
+    width: 100%;
+  }
 }

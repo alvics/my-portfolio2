@@ -1,0 +1,23 @@
+<!-- Binding lat and long 
+<agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onChoseLocation($event)">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map> -->
+
+<div *ngIf="lat && lng">
+  <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onChoseLocation($event)">
+    <agm-marker [latitude]="lat" [longitude]="lng">
+      <agm-info-window>
+        <h3>
+          <strong>Allen Pavic
+            <br>
+            <span style="font-size:0.7em">Web Developer</span>
+          </strong>
+        </h3>
+        <p>Need website development? We are here!
+          <br>22 Beitz Ave, Labrador, Qld 4215
+          <br>Tel: 0404 602 657
+        </p>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+  <div>

@@ -1,10 +1,15 @@
 .view {
     background: url("/assets/images/img2_p.jpg")no-repeat center center;
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
     border-bottom: solid 3px #33b5e5;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
+.container {
+    padding-top: 40px;
+    color: #f8f8f8;
+  }
 
 hr {
     margin-top: -50px;
@@ -27,7 +32,7 @@ hr {
 h1 {
     text-align: center;
     font-size: 36px;
-    margin-top: -40px;
+    margin-top: 10px;
 }
 
 h4 {
@@ -51,7 +56,3 @@ h4 {
     color: black;
 }
 
-.container {
-    padding-top: 100px;
-    color: #f8f8f8;
-}
