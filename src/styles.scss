@@ -126,6 +126,7 @@
     #responsiveWebsites {
         @media (max-width: 450px) {
             width: 75%;
+            height: auto !important;
         }
     }
     
@@ -136,3 +137,4 @@
             padding-right: 30px;
         }
     }
+

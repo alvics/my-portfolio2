@@ -18,8 +18,6 @@ export class ContactComponent {
   itemMessage = '';
   form;
   items: Observable<any[]>;
-  
-
   contactForm: FormGroup;
 
     constructor(private fb: FormBuilder, private db: AngularFireDatabase) {
@@ -35,7 +33,7 @@ export class ContactComponent {
     
     onSubmit() {
       this.db.list('/messages').push({ name: this.itemName, email: this.itemEmail, subject: this.itemSubject, message: this.itemMessage});
-      alert('Thank you for contacting us, your message has gone through!')
+      alert('Thanks, your message has gone through!')
       }
 
       clearForm() {

@@ -14,8 +14,10 @@
 
 
 <!--Modal: Contact form-->
+
 <div mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
+  <form [formGroup]="myForm">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
@@ -26,37 +28,43 @@
       </div>
      <div class="modal-body mx-3">
         <div class="md-form mb-5">
+            
           <i class="fa fa-user prefix grey-text"></i>
-          <input type="text" id="form34" class="form-control validate" mdbInputDirective [formControl]="contactFormModalName"  [(ngModel)]="itemName">
+          <input type="text" id="form34" class="form-control validate" mdbInputDirective [formControl]="contactFormModalName"  formControlName="contactFormName" [(ngModel)]="itemName">
           <label data-error="wrong" data-success="right" for="form34">Your name</label>
-        </div>
+   
 
         <div class="md-form mb-5">
           <i class="fa fa-envelope prefix grey-text"></i>
-          <input type="email" id="form29" class="form-control validate" mdbInputDirective [formControl]="contactFormModalEmail"  [(ngModel)]="itemEmail">
+          <input type="email" id="form29" class="form-control validate" mdbInputDirective [formControl]="contactFormModalEmail" formControlName="contactFormEmail" [(ngModel)]="itemEmail">
           <label data-error="wrong" data-success="right" for="form29">Your email</label>
         </div>
 
         <div class="md-form mb-5">
           <i class="fa fa-tag prefix grey-text"></i>
-          <input type="text" id="form32" class="form-control validate" mdbInputDirective [formControl]="contactFormModalSubject" [(ngModel)]="itemSubject">
+          <input type="text" id="form32" class="form-control validate" mdbInputDirective [formControl]="contactFormModalSubject" formControlName="contactFormSubject" [(ngModel)]="itemSubject">
           <label data-error="wrong" data-success="right" for="form32">Subject</label>
         </div>
 
         <div class="md-form">
           <i class="fa fa-pencil prefix grey-text"></i>
-          <textarea type="text" id="form8" class="md-textarea form-control" rows="1" mdbInputDirective [formControl]="contactFormModalMessage" [(ngModel)]="itemMessage"></textarea>
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="1" mdbInputDirective [formControl]="contactFormModalMessage" formControlName="contactFormMessage" [(ngModel)]="itemMessage"></textarea>
           <label data-error="wrong" data-success="right" for="form8">Your message</label>
         </div>
- </div>
+      
  <div class="modal-footer d-flex justify-content-center">
-        <button (click)="onSubmit()" type="submit" mdbBtn color="info" class="waves-light" mdbWavesEffect>Send
+        <button [disabled]="!myForm.valid" (click)="onSubmit()" (click)="frame.hide()" type="submit" mdbBtn color="info" class="waves-light" mdbWavesEffect>Send
           <i class="fa fa-paper-plane-o ml-1"></i>
         </button>
       </div>
     </div>
   </div>
 </div>
+</div>
+</form>
+</div>
+
+
 <!--Modal: Contact form-->
 
  <!-- <div class="container-fluid">

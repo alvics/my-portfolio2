@@ -1,7 +1,6 @@
-import { Observable } from 'rxjs';
 import { HeaderService } from './../../header.service';
 import { DataService } from './../../data.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,19 +8,16 @@ import { Component } from '@angular/core';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent {
-  posts$: Observable<any[]>;
+export class BlogComponent implements OnInit {
+  posts$: Object;
   title = "Blog";
   image: string;
   h2: string;
   h5: string;
 
 
-  constructor(private headerService: HeaderService, private data: DataService) {
+  constructor(private headerService: HeaderService, private data: DataService) {}
 
-    // this.posts$ = this.data.getPosts();
-    // console.log(data);
-  }
   ngOnInit() {
     this.headerService.currentTitle.subscribe(title => this.title = title);
 
@@ -34,7 +30,5 @@ export class BlogComponent {
   newTitle() {
     return this.headerService.changeTitle("Blog");
   }
-
-
 
 }

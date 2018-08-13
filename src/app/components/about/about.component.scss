@@ -114,9 +114,9 @@ h1{
 
     @media (max-width:730px) {
       #other-interests {
+        display: block;
+        margin: 30px auto;
         padding: 10px 35px;
-        margin-bottom: 20px;
-        margin-left: -50px;
-        width: 100vw;
+        
       }
     }
