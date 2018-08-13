@@ -1,15 +1,17 @@
 <div class="section-banner">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div id="bottomBannerText" class="col-md-6">
-                    <h3>Ready to start your Enterprise?</h3>
-                    <p>Get your high quality website.</p>
-                </div>
-                <div class="col-md-6"><button type="button" class="btn btn-outline-info waves-light" mdbWavesEffect (click)="frame.show()">GET IN TOUCH</button></div>
-            </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div id="bottomBannerText" class="col-sm-12 col-md-6 bluebanner1">
+          <h3>Ready to start your Enterprise?</h3>
+          <p>Get your high quality website.</p>
         </div>
+        <div class="col-sm-12 col-md-6 bluebanner2">
+          <button type="button" class="btn btn-outline-info waves-light" mdbWavesEffect (click)="frame.show()">GET IN TOUCH</button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 
@@ -18,56 +20,58 @@
 <div mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <form [formGroup]="myForm">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100">Contact form</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-     <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-            
-          <i class="fa fa-user prefix grey-text"></i>
-          <input type="text" id="form34" class="form-control validate" mdbInputDirective [formControl]="contactFormModalName"  formControlName="contactFormName" [(ngModel)]="itemName">
-          <label data-error="wrong" data-success="right" for="form34">Your name</label>
-   
-
-        <div class="md-form mb-5">
-          <i class="fa fa-envelope prefix grey-text"></i>
-          <input type="email" id="form29" class="form-control validate" mdbInputDirective [formControl]="contactFormModalEmail" formControlName="contactFormEmail" [(ngModel)]="itemEmail">
-          <label data-error="wrong" data-success="right" for="form29">Your email</label>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100">Contact form</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
 
-        <div class="md-form mb-5">
-          <i class="fa fa-tag prefix grey-text"></i>
-          <input type="text" id="form32" class="form-control validate" mdbInputDirective [formControl]="contactFormModalSubject" formControlName="contactFormSubject" [(ngModel)]="itemSubject">
-          <label data-error="wrong" data-success="right" for="form32">Subject</label>
-        </div>
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="form34" class="form-control validate" mdbInputDirective formControlName="contactFormName" [(ngModel)]="itemName">
+            <label data-error="wrong" data-success="right" for="form34">Your name</label>
 
-        <div class="md-form">
-          <i class="fa fa-pencil prefix grey-text"></i>
-          <textarea type="text" id="form8" class="md-textarea form-control" rows="1" mdbInputDirective [formControl]="contactFormModalMessage" formControlName="contactFormMessage" [(ngModel)]="itemMessage"></textarea>
-          <label data-error="wrong" data-success="right" for="form8">Your message</label>
+
+            <div class="md-form mb-5">
+              <i class="fa fa-envelope prefix grey-text"></i>
+              <input type="email" id="form29" class="form-control validate" mdbInputDirective formControlName="contactFormEmail" [(ngModel)]="itemEmail">
+              <label data-error="wrong" data-success="right" for="form29">Your email</label>
+            </div>
+
+            <div class="md-form mb-5">
+              <i class="fa fa-tag prefix grey-text"></i>
+              <input type="text" id="form32" class="form-control validate" mdbInputDirective formControlName="contactFormSubject" [(ngModel)]="itemSubject">
+              <label data-error="wrong" data-success="right" for="form32">Subject</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fa fa-pencil prefix grey-text"></i>
+              <textarea type="text" id="form8" class="md-textarea form-control" rows="1" mdbInputDirective formControlName="contactFormMessage"
+                [(ngModel)]="itemMessage"></textarea>
+              <label data-error="wrong" data-success="right" for="form8">Your message</label>
+            </div>
+
+            <div class="modal-footer d-flex justify-content-center">
+              <button [disabled]="!myForm.valid" (click)="onSubmit()" (click)="frame.hide()" type="submit" mdbBtn color="info" class="waves-light"
+                mdbWavesEffect>Send
+                <i class="fa fa-paper-plane-o ml-1"></i>
+              </button>
+            </div>
+          </div>
         </div>
-      
- <div class="modal-footer d-flex justify-content-center">
-        <button [disabled]="!myForm.valid" (click)="onSubmit()" (click)="frame.hide()" type="submit" mdbBtn color="info" class="waves-light" mdbWavesEffect>Send
-          <i class="fa fa-paper-plane-o ml-1"></i>
-        </button>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</form>
+  </form>
 </div>
 
 
 <!--Modal: Contact form-->
 
- <!-- <div class="container-fluid">
+<!-- <div class="container-fluid">
 	<div style="color: blue;">
 		<h1>Contact me</h1>
 	</div>
@@ -95,7 +99,7 @@
 			</div>
 		</form>
 	</div> -->
-  <!--  <div class="container mt-5">
+<!--  <div class="container mt-5">
   <h1 class="title">Contact Form</h1>
   <div class="wrapper animated bounceInLeft">
     <div class="contact">
