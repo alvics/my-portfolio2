@@ -86,7 +86,7 @@ span.x {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .card {
     width: 100%;
     padding: 0 30px;
@@ -95,4 +95,16 @@ span.x {
     margin: 0 auto;
     width: 100%;
   }
+  .bottomsubhead{
+    margin-top: 25px;
+    padding: 0 20px;
+  }
+  #location{
+    margin-top: 30px;
+  }
+  #top-text{
+    margin-top:-35px;
+  }
 }
+
+

@@ -16,3 +16,9 @@ a.page-link:hover {
     color: #fff !important;
     background-color: #ccc !important;
 }
+
+@media (max-width: 768px) {
+    .pagination{
+        padding: 50px 0;
+    }
+}

@@ -31,7 +31,6 @@ import { ModalComponent } from './ui/components/modal/modal.component';
 import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
-import { ComponentsComponent } from './components/components.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
 
 
@@ -62,11 +61,10 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
-    ComponentsComponent,
     GoogleMapsComponent,
-  
-   
-    
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -76,13 +74,13 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
     AngularFireModule,
-    AngularFireDatabaseModule, 
+    AngularFireDatabaseModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCRlY4Es8lcVZqF344b6qay5S3BczGEA9o'
     }),
     MDBBootstrapModule.forRoot()
-  ], 
-  schemas: [ NO_ERRORS_SCHEMA ],
+  ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

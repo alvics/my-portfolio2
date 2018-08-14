@@ -49,8 +49,9 @@
     display: none;
   }
   .btn {
-    display: block !important;
-    margin: 0 auto !important;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
   mdbModal {
     height: 100%;

@@ -16,87 +16,88 @@
 
 <!-- contact form -->
 
-  <div class="container mb-5">
-    <h1 style="text-align:center; font-size:36px">Get a quote for your website from AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
-  </div>
-    <hr>
-  <div class="container">
-    <h4 id="top-text" class="mt-5">Online contact form</h4>
-    <p>If you are interested in discussing a project with me please leave your details in the form
-      <br> below and I'll get back to you ASAP. </p>
-    <div class="row">
-      <div class="col-md-8 col-sm-12">
-        <div class="overlay">
-          <!--Header-->
-          <div class="modal-header white-text">
-            <h4 class="title">
-              <i class="fa fa-pencil"></i> Contact Form</h4>
-            <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-              <span class="x" aria-hidden="true" routerLink="/home">×</span>
-            </button>
-          </div>
-          <div class="card mb-5">
-            <div class="md-form">
-              <form [formGroup]="contactForm">
-                <p class="h5 text-center mb-4">Contact info</p>
-                <p id="email">e: apavic71@gmail.com</p>
-                <p id="phone">m: 0404 602 657</p>
-                <div class="md-form">
-                  <i class="fa fa-user prefix grey-text"></i>
-                  <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbInputDirective [(ngModel)]="itemName">
-                  <label for="contactFormName">Your name</label>
-                </div>
-                <div class="md-form">
-                  <i class="fa fa-envelope prefix grey-text"></i>
-                  <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control" mdbInputDirective [(ngModel)]="itemEmail">
-                  <label for="contactFormEmail">Your email</label>
-                </div>
-                <div class="md-form">
-                  <i class="fa fa-tag prefix grey-text"></i>
-                  <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control" mdbInputDirective [(ngModel)]="itemSubject">
-                  <label for="contactFormSubject">Subject</label>
-                </div>
-                <div class="md-form">
-                  <i class="fa fa-pencil prefix grey-text"></i>
-                  <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px"
-                    mdbInputDirective [(ngModel)]="itemMessage"></textarea>
-                  <label for="contactFormMessage">Your message</label>
-                </div>
-                <div class="text-center">
-                  <button [disabled]="contactForm.invalid"  (click)="onSubmit()" (click)="clearForm()" type="submit" class="btn waves-light" mdbWavesEffect>Send
-                    <i class="fa fa-paper-plane-o ml-1"></i>
-                  </button>
-                  <br>
-                </div>
-              </form>
-            </div>
+<div class="container mb-5">
+  <h1 style="text-align:center; font-size:36px">Get a quote for your website from AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
+</div>
+<hr>
+<div class="container">
+  <h4 id="top-text" class="mt-5">Online contact form</h4>
+  <p>If you are interested in discussing a project with me please leave your details in the form
+    <br> below and I'll get back to you ASAP. </p>
+  <div class="row">
+    <div class="col-md-8 col-sm-12">
+      <div class="overlay">
+        <!--Header-->
+        <div class="modal-header white-text">
+          <h4 class="title">
+            <i class="fa fa-pencil"></i> Contact Form</h4>
+          <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+            <span class="x" aria-hidden="true" routerLink="/home">×</span>
+          </button>
+        </div>
+        <div class="card mb-5">
+          <div class="md-form">
+            <form [formGroup]="contactForm">
+              <p class="h5 text-center mb-4">Contact info</p>
+              <p id="email">e: apavic71@gmail.com</p>
+              <p id="phone">m: 0404 602 657</p>
+              <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbInputDirective [(ngModel)]="itemName">
+                <label for="contactFormName">Your name</label>
+              </div>
+              <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control" mdbInputDirective [(ngModel)]="itemEmail">
+                <label for="contactFormEmail">Your email</label>
+              </div>
+              <div class="md-form">
+                <i class="fa fa-tag prefix grey-text"></i>
+                <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control" mdbInputDirective [(ngModel)]="itemSubject">
+                <label for="contactFormSubject">Subject</label>
+              </div>
+              <div class="md-form">
+                <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px"
+                  mdbInputDirective [(ngModel)]="itemMessage"></textarea>
+                <label for="contactFormMessage">Your message</label>
+              </div>
+              <div class="text-center">
+                <button [disabled]="contactForm.invalid" (click)="onSubmit()" (click)="clearForm()" type="submit" class="btn waves-light"
+                  mdbWavesEffect>Send
+                  <i class="fa fa-paper-plane-o ml-1"></i>
+                </button>
+                <br>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <img src="assets/pages/websites1.png" width="500" alt="">
-        <div class="services">
-          <h4>SERVICES</h4>
-          <ul>
-            <li>Angular Developmet</li>
-            <li>WordPress Websites</li>
-            <li>eCommerce Store</li>
-            <li>Business Websites</li>
-            <li>SEO & Markerting</li>
-            <li>Web Hosting</li>
-          </ul>
-        </div>
-        <p style="padding-left: 40px;">Guaranteed to beat any written quote!
-          <p>
       </div>
     </div>
-    <h4 id="location">Location Gold Coast</h4>
-    <p class="mt-5">22 Beitz Ave, Labrador, Qld 4215 / Phone: 0404 602 657</p>
-    <!-- GOOGLE MAPS API -->
-    <app-google-maps></app-google-maps>
+    <div class="col-md-4 col-sm-12">
+      <img id="websites" src="assets/pages/websites1.png" width="500" alt="responsive websites">
+      <div class="services">
+        <h4>SERVICES</h4>
+        <ul>
+          <li>Angular Developmet</li>
+          <li>WordPress Websites</li>
+          <li>eCommerce Store</li>
+          <li>Business Websites</li>
+          <li>SEO & Markerting</li>
+          <li>Web Hosting</li>
+        </ul>
+      </div>
+      <p style="padding-left: 40px;">Guaranteed to beat any written quote!
+        <p>
+    </div>
   </div>
-  <div class="bottomsubhead">
-    <h6>Specializing in Blazing-Fast high quality website</h6>
-    <p>Request a quote</p>
-  </div>
-  <app-footer></app-footer>
+  <h4 id="location">Location Gold Coast</h4>
+  <p class="mt-5">22 Beitz Ave, Labrador, Qld 4215 / Phone: 0404 602 657</p>
+  <!-- GOOGLE MAPS API -->
+  <app-google-maps></app-google-maps>
+</div>
+<div class="bottomsubhead">
+  <h6>Specializing in Blazing-Fast high quality website</h6>
+  <p>Request a quote</p>
+</div>
+<app-footer></app-footer>
