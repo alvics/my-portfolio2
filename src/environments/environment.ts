@@ -5,18 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAk5cyY4nAMJIAVuKOcPJxSmO9TDXny66Y",
-    authDomain: "allen-portfolio.firebaseapp.com",
-    databaseURL: "https://allen-portfolio.firebaseio.com",
-    projectId: "allen-portfolio",
-    storageBucket: "allen-portfolio.appspot.com",
-    messagingSenderId: "1012007408353"
-},
-
-
-contentful: {
-  spaceId: '3bh985ibn6ee',
-  token: 'a8801431cea8f387eb2c86780b2c945508ab0fc4baf2b272e7fdb4c394375efa'
+    apiKey: 'AIzaSyCsNAGVHJHcYrKWs0lKuF4c577BtCmsy7Y',
+    authDomain: 'allen-pavic-wd.firebaseapp.com',
+    databaseURL: 'https://allen-pavic-wd.firebaseio.com',
+    projectId: 'allen-pavic-wd',
+    storageBucket: 'allen-pavic-wd.appspot.com',
+    messagingSenderId: '128420713321'
   }
 };
 /*
