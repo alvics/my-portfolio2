@@ -1,63 +1,62 @@
 .navbar {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
-links {
-    margin-left: 100px;
+.links {
+  margin-left: 100px;
 }
 
 a.nav-link {
-    font-size: 14px;
-    padding-left: 40px !important;
+  font-size: 14px;
+  padding-left: 40px !important;
 }
 
 .logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #232323;
-    text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #232323;
+  text-transform: uppercase;
 }
 
 .fa {
-    padding-left: 40px;
-    color: #232323;
-    transition: 0.35s;
+  padding-left: 40px;
+  color: #232323;
+  transition: 0.35s;
 }
 
 .fa:hover {
-    color: #33b5e5;
-    cursor: pointer;
-    transition: 0.35s;
+  color: #33b5e5;
+  cursor: pointer;
+  transition: 0.35s;
 }
 
 .nav-link {
-    color: #232323;
+  color: #232323;
 }
-
 
 /*-----------------------
 -------underline---------
 ----------------------- */
 
 .header-nav-item {
-    font-size: 16px;
-    padding: 8px;
-    cursor: pointer;
-    position: relative;
+  font-size: 16px;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
 }
 
 .header-nav-item span {
-    height: 2px;
-    background-color: #33b5e5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    transition: 0.3s ease;
+  height: 2px;
+  background-color: #33b5e5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: 0.3s ease;
 }
 
 .header-nav-item:hover span {
-    width: 100%;
-    margin-left: 15px;
+  width: 100%;
+  margin-left: 15px;
 }
