@@ -20,7 +20,8 @@
     <div class="row">
         <div class="col-md-8">
             <h4>Thank's for interest in hiring me.</h4>
-            <p id="topp" style="text-align: center">If your interested in discussing projects or hourly rate work please leave your details below and I'll get back to you ASAP.</p>
+            <p id="topp" style="text-align: center">If your interested in discussing projects or hourly rate work please
+                leave your details below and I'll get back to you ASAP.</p>
 
             <div class="card mb-5">
 
@@ -29,7 +30,7 @@
                     <form [formGroup]="contactForm">
 
                         <button routerLink="/home" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span></button>
+                            <span aria-hidden="true">×</span></button>
 
                         <p class="h5 text-center mb-4">Connect with me</p>
                         <p id="email" class="text-center ">e: apavic71@gmail.com</p>
@@ -55,14 +56,15 @@
 
                         <div class="md-form">
                             <i class="fa fa-pencil prefix grey-text"></i>
-                            <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px" mdbInputDirective [(ngModel)]="itemMessage"></textarea>
+                            <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px"
+                                mdbInputDirective [(ngModel)]="itemMessage"></textarea>
                             <label for="contactFormMessage">Your message</label>
                         </div>
 
                         <div class="text-center">
-                            <button (click)="onSubmit()" type="submit" class="btn btn waves-light" mdbWavesEffect>Send
-                         <i class="fa fa-paper-plane-o ml-1"></i>
-                                 </button>
+                            <button [disabled]="contactForm.invalid" (click)="onSubmit()" type="submit" class="btn btn waves-light" mdbWavesEffect>Send
+                                <i class="fa fa-paper-plane-o ml-1"></i>
+                            </button>
                             <br>
                         </div>
                     </form>

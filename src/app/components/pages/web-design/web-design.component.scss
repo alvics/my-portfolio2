@@ -93,6 +93,7 @@
 }
 
 .bottomsubhead {
+  margin-top: -40px;
   color: #232323;
   text-align: center;
   padding: 10px 0;
@@ -101,7 +102,7 @@
   }
   p {
     font-size: 16px;
-    padding-bottom: 35px;
+    padding-bottom: 80px;
   }
 }
 
@@ -115,8 +116,6 @@
   background-color: #f8f8f8;
   padding: 35px 0;
 }
-
-
 
 @media (max-width: 767px) {
   .column-1,
