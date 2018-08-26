@@ -1,7 +1,8 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white" [containerInside]="true">
     <logo>
-        <a class="logo navbar-brand" routerLink="/home"><!-- AL<span style="color:#33b5e5">LEN</span> PAVIC-->
-            <img src="assets/images/logo101.png" width= "175" alt="Allen Pavic logo">
+        <a class="logo navbar-brand" routerLink="/home">
+            <!-- AL<span style="color:#33b5e5">LEN</span> PAVIC-->
+            <img src="assets/images/logo101.png" width="175" alt="Allen Pavic logo">
         </a>
     </logo>
     <links>
@@ -17,6 +18,21 @@
                     <a class="nav-link" routerLink="/about">About</a>
                     <span></span>
                 </li>
+            </div>
+            <div class="header-nav-item dropdown" mdbDropdown>
+                <li mdbDropdownToggle class="nav-item waves-light dropdown-toggle" mdbWavesEffect>
+                    <a class="nav-link">Services</a>
+                    <span></span>
+                </li>
+                <div class="dropdown-menu dropdown-primary">
+                    <a class="dropdown-item" routerLink="web-design">Web design</a>
+                    <a class="dropdown-item" routerLink="ecommerce">eCommerce</a>
+                    <a class="dropdown-item" routerLink="web-design">SEO websites</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="responsive-websites">Responsive websites</a>
+                    <a class="dropdown-item" routerLink="web-development">Web development</a>
+                    <a class="dropdown-item" routerLink="web-hosting">Web hosting</a>
+                </div>
             </div>
             <div class="header-nav-item">
                 <li class="nav-item waves-light" mdbWavesEffect>

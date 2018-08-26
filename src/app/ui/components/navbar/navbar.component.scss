@@ -35,6 +35,20 @@ a.nav-link {
   color: #232323;
 }
 
+.dropdown-toggle:after {
+  display: none;
+}
+
+.dropdown-menu {
+  margin-top: -8px;
+  padding: 10px 25px;
+  border-top: solid 4px #33b5e5;
+}
+
+.dropdown-item:hover {
+  color: #33b5e5 !important;
+}
+
 /*-----------------------
 -------underline---------
 ----------------------- */
