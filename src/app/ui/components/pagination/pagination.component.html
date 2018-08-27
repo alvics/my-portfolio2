@@ -2,8 +2,6 @@
 <nav class="my-4">
     <ul class="pagination pagination-circle  mb-0">
 
-
-
         <!--Arrow left-->
         <li class="page-item disabled">
             <a class="page-link" mdbWavesEffect aria-label="Previous">
@@ -11,20 +9,24 @@
             </a>
         </li>
 
-        <!--Numbers-->
-        <li class="page-item" mdbTooltip="Web design" placement="top"><a class="page-link" routerLink="/web-design" mdbWavesEffect>1</a></li>
-        <li class="page-item" mdbTooltip="ecommerce" placement="top"><a class="page-link" routerLink="/ecommerce" mdbWavesEffect>2</a></li>
-        <li class="page-item" mdbTooltip="SEO" placement="top"><a class="page-link" routerLink="/seo" mdbWavesEffect>3</a></li>
-        <li class="page-item" mdbTooltip="Responsive websites" placement="top"><a class="page-link" mdbWavesEffect routerLink="/responsive-websites">4</a></li>
-        <li class="page-item" mdbTooltip="Web development" placement="top"><a class="page-link" mdbWavesEffect routerLink="/web-development">5</a></li>
-        <li class="page-item" mdbTooltip="Web hosting" placement="top"><a class="page-link" mdbWavesEffect routerLink="/web-hosting">6</a></li>
-        <!--Arrow right-->
+        <!-- Class binding / Routes (activated-Numbers) -->
+        <li class="page-item" mdbTooltip="Web design" placement="top"><a class="page-link" routerLink="/web-design" [class.activated]="currentUrl == '/web-design'"
+                mdbWavesEffect>1</a></li>
+        <li class="page-item" mdbTooltip="ecommerce" placement="top"><a class="page-link" routerLink="/ecommerce" [class.activated]="currentUrl == '/ecommerce'"
+                mdbWavesEffect>2</a></li>
+        <li class="page-item" mdbTooltip="SEO" placement="top"><a class="page-link" routerLink="/seo" [class.activated]="currentUrl == '/seo'"
+                mdbWavesEffect>3</a></li>
+        <li class="page-item" mdbTooltip="Responsive websites" placement="top"><a class="page-link" [class.activated]="currentUrl == '/responsive-websites'"
+                mdbWavesEffect routerLink="/responsive-websites">4</a></li>
+        <li class="page-item" mdbTooltip="Web development" placement="top"><a class="page-link" [class.activated]="currentUrl == '/web-development'"
+                mdbWavesEffect routerLink="/web-development">5</a></li>
+        <li class="page-item" mdbTooltip="Web hosting" placement="top"><a class="page-link" [class.activated]="currentUrl == '/web-hosting'"
+                mdbWavesEffect routerLink="/web-hosting">6</a></li>
+        <!--Arrow right
         <li class="page-item">
             <a class="page-link" mdbWavesEffect aria-label="Next">
-                <span aria-hidden="true">»</span>
-
-            </a>
-        </li>
+                <span aria-hidden="true">»</span></a> 
+        </li> --> 
     </ul>
     <!--First-->
 </nav>

@@ -112,3 +112,16 @@
     padding-bottom: 65px;
   }
 }
+@media (max-width: 450px) {
+  .view{
+    height: 50vh;
+  }
+  .websitesImg {
+    display: block;
+    margin: 0 auto;
+    width:75%;
+  }
+  #websitesImg1{
+    margin-left: 50px;
+  }
+}

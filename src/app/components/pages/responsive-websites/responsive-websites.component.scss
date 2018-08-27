@@ -77,7 +77,7 @@
     display: block;
     margin: 0 auto;
     height: 400px;
-    width: 400px;
+    width: auto;
     padding: 0;
   }
 }
@@ -100,3 +100,13 @@
     padding-bottom: 45px;
   }
 }
+ @media (max-width: 450px) {
+  .view{
+    height: 50vh;
+  }
+   .websitesImg {
+     display: block;
+     margin: 0 auto;
+     width:75%;
+   }
+ }

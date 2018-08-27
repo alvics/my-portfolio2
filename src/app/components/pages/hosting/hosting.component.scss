@@ -153,3 +153,29 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .websitesImg1{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .view{
+    height: 50vh;
+  }
+  .websitesImg2{
+     display: none !important;
+  
+    }
+  #whyus2 {
+    #whyus{
+   display: none !important;
+  }
+}
+}
+@media (min-width:451px) {
+  #whyus2 {
+    #smallScreenOnly{
+   display: none !important;
+  }
+}
+}

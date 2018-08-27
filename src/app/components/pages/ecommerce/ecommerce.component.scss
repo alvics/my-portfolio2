@@ -98,3 +98,14 @@
     padding-bottom: 35px;
   }
 }
+
+@media (max-width: 450px) {
+  .view{
+    height: 50vh;
+  }
+  #websitesImg1{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
