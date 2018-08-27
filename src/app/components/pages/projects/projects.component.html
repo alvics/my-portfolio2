@@ -23,6 +23,25 @@
 <hr>
 <app-portfolio></app-portfolio>
 
+<div class="space"></div>
+
+<div class="container">
+    <h1 class="heading">Layouts</h1>
+    <ul>
+        <li *ngFor="let page of pages$">
+
+
+            <h3>
+                <div style="color:#232323" [innerHTML]="page.title.rendered"></div>
+            </h3>
+
+            <p>
+                <div style="color:#232323" [innerHTML]="page.content.rendered"></div>
+
+
+        </li>
+    </ul>
+</div>
 <!-- Comming from Contenful CMS -->
 <!--
 <div id="bck-img">
