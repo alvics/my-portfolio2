@@ -25,7 +25,7 @@ import { ResponsiveWebsitesComponent } from './components/pages/responsive-websi
 import { SeoComponent } from './components/pages/seo/seo.component';
 import { WebDesignComponent } from './components/pages/web-design/web-design.component';
 import { WebDevelopmetComponent } from './components/pages/web-developmet/web-developmet.component';
-import { MdToHtmlPipe } from './md-to-html.pipe';
+
 import { FooterComponent } from './ui/components/footer/footer.component';
 import { ModalComponent } from './ui/components/modal/modal.component';
 import { NavbarComponent } from './ui/components/navbar/navbar.component';
@@ -49,7 +49,6 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     HireComponent,
     ProjectsComponent,
     BlogComponent,
-    MdToHtmlPipe,
     PortfolioComponent,
     ModalComponent,
     EcommerceComponent,
