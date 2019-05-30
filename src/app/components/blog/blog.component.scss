@@ -1,12 +1,13 @@
 .view {
-  background: url("/assets/images/img2_p.jpg")no-repeat center center;
+  background: url('/assets/images/img2_p.jpg') no-repeat center center;
   background-size: cover;
   height: 70vh;
   border-bottom: solid 3px #33b5e5;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-h2 {
+h2,
+a {
   color: #fff;
 }
 
@@ -33,4 +34,9 @@ p {
 
 mdb-card {
   padding: 50px 12px;
+}
+
+pre .language-markup {
+  background-color: #fff !important;
+  padding: 20px;
 }

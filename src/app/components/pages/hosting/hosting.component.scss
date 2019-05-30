@@ -3,6 +3,9 @@
   color: #f8f8f8;
 }
 
+a {
+  color: #fff;
+}
 /*===============*/
 
 /* BOX CONTAINER */
@@ -154,28 +157,27 @@
   }
 }
 @media (max-width: 450px) {
-  .websitesImg1{
+  .websitesImg1 {
     display: block;
     margin: 0 auto;
     width: 100%;
   }
-  .view{
+  .view {
     height: 50vh;
   }
-  .websitesImg2{
-     display: none !important;
-  
+  .websitesImg2 {
+    display: none !important;
+  }
+  #whyus2 {
+    #whyus {
+      display: none !important;
     }
-  #whyus2 {
-    #whyus{
-   display: none !important;
   }
 }
-}
-@media (min-width:451px) {
+@media (min-width: 451px) {
   #whyus2 {
-    #smallScreenOnly{
-   display: none !important;
+    #smallScreenOnly {
+      display: none !important;
+    }
   }
-}
 }

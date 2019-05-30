@@ -38,7 +38,10 @@ h2 {
   padding: 50px 65px;
   color: #232323;
   border-top: solid 6px #33b5e5;
-  border-bottom: solid 6px #33b5e5;
+}
+
+a {
+  color: #f2f2f2;
 }
 
 /* #col1 {
@@ -112,8 +115,9 @@ h2 {
 
 .container-fluid {
   text-align: center;
-  color: #fff;
-  background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+  color: #212121;
+  // background: linear-gradient(to bottom left, #33b5e5, #add9eb);
+  background-color: #f8f8f8;
   padding: 35px 250px;
   margin-top: 110px;
   margin-bottom: -80px;
@@ -126,14 +130,21 @@ h2 {
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: -30px;
+  padding: 10px;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 768px) {
   #other-interests {
     display: block;
-    margin: 30px auto;
-    padding: 10px 35px;
+    margin-left: -20px;
+    padding: 50px 35px;
+  }
+  #magpies,
+  #qld,
+  #liverpool {
+    padding-left: 140px;
+  }
+  #magpies {
+    margin-left: -10px;
   }
 }

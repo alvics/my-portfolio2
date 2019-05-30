@@ -43,6 +43,9 @@
   }
 }
 
+a {
+  color: #fff;
+}
 /*  /.End Box-Container */
 
 img {
@@ -117,10 +120,10 @@ img {
   }
 }
 @media (max-width: 450px) {
-  .view{
+  .view {
     height: 50vh;
   }
-  .websitesImg1{
+  .websitesImg1 {
     display: block;
     margin: 0 auto;
     width: 100%;

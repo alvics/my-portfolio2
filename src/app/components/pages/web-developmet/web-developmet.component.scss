@@ -47,6 +47,10 @@
   }
 }
 
+a {
+  color: #fff;
+}
+
 /*  /.End Box-Container */
 
 #row3 {
@@ -113,15 +117,15 @@
   }
 }
 @media (max-width: 450px) {
-  .view{
+  .view {
     height: 50vh;
   }
   .websitesImg {
     display: block;
     margin: 0 auto;
-    width:75%;
+    width: 75%;
   }
-  #websitesImg1{
+  #websitesImg1 {
     margin-left: 50px;
   }
 }

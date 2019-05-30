@@ -1,84 +1,87 @@
 .view {
-    background: url("/assets/images/aboutme.jpeg")no-repeat center center;
-    background-size: cover;
-    height: 50vh;
-    border-bottom: solid 3px #33b5e5;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: url('/assets/images/hero1.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  border-bottom: solid 3px #33b5e5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .container {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .btn {
-    background-color: #33b5e5;
+  background-color: #33b5e5;
 }
 
 h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 h4 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #topp {
-    margin-top: -30px;
+  margin-top: -30px;
 }
 
 .hire-open {
-    margin-top: 155px;
+  margin-top: 155px;
 }
 
 h3,
 h4,
 h5 {
-    font-family: 'Michroma', sans-serif;
-    text-align: center;
-    padding-bottom: 40px;
+  font-family: 'Michroma', sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 h5 {
-    line-height: 1.35em;
+  line-height: 1.35em;
 }
 
 .card {
-    padding: 15px 30px;
-    width: 100%;
-    margin: auto;
-    height: 752px;
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
+  height: 752px;
 }
 
 #email,
 #phone {
-    font-family: 'Courier New', Courier, monospace;
-    line-height: .5em;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 0.5em;
+}
+a {
+  color: #fff;
 }
 
 .bottomsubhead {
-    color: #fff;
-    text-align: center;
-    background-color: #33b5e5;
-    opacity: 0.8;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: -68px;
-    position: relative;
-    h6 {
-        font-size: 30px;
-        margin-top: 60px;
-        font-weight: 900;
-    }
-    p {
-        font-size: 16px;
-    }
+  color: #fff;
+  text-align: center;
+  background-color: #33b5e5;
+  opacity: 0.8;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -68px;
+  position: relative;
+  h6 {
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
-@media (max-width:1000px) {
-    .card {
-        width: 100%;
-    }
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
 }

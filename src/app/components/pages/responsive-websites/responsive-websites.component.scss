@@ -43,6 +43,9 @@
   }
 }
 
+a {
+  color: #fff;
+}
 /*  /.End Box-Container */
 
 #row3 {
@@ -100,13 +103,13 @@
     padding-bottom: 45px;
   }
 }
- @media (max-width: 450px) {
-  .view{
+@media (max-width: 450px) {
+  .view {
     height: 50vh;
   }
-   .websitesImg {
-     display: block;
-     margin: 0 auto;
-     width:75%;
-   }
- }
+  .websitesImg {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+}

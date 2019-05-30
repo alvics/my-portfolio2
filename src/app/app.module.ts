@@ -33,10 +33,6 @@ import { PaginationComponent } from './ui/components/pagination/pagination.compo
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,13 +56,10 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
-    GoogleMapsComponent,
-
-
-
+    GoogleMapsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'starter-mdbootstrap' }),
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
@@ -83,4 +76,4 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

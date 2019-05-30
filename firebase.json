@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/starter-mdbootstrap",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
