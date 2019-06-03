@@ -1,6 +1,7 @@
 import { DataService } from './../../../data.service';
 import { HeaderService } from './../../../header.service';
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-projects',
@@ -9,14 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   title;
+  my_title = 'Projects | Allen Pavic';
   pages$: Object;
+
   // Creating a variables as observables to hold the layouts content
   // layouts: Entry<any>[] = [];
   // images: Entry<any>[] = [];
 
   constructor(
     /*private contenful: ContentfulService*/ private headerService: HeaderService,
-    private data: DataService
+    private data: DataService,
+    private titleService: Title,
+    private meta: Meta
   ) {}
 
   ngOnInit() {
@@ -34,6 +39,19 @@ export class ProjectsComponent implements OnInit {
     /* this.contenful.getImages()
     .then(images => this.images = images);
      } */
+    this.titleService.setTitle(this.my_title);
+
+    this.meta.updateTag({
+      name: 'keywords',
+      content:
+        "angular projects, web app's, single page application's, spa, pwa, wordpress,websites "
+    });
+
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        "Projects by Allen Pavic, Angular and WordPress portfolio, responsive websites, PWA's, eCommerce sites and more...  "
+    });
   }
 
   // function to change the titles value

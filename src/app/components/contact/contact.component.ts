@@ -1,16 +1,17 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs';
 import { resetApplicationState } from '../../../../node_modules/@angular/core/src/render3/instructions';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   name = 'Contact';
   itemName = '';
   itemEmail = '';
@@ -20,7 +21,9 @@ export class ContactComponent {
   items: Observable<any[]>;
   contactForm: FormGroup;
 
-    constructor(private fb: FormBuilder, private db: AngularFireDatabase) {
+  title = 'Contact | Allen Pavic';
+
+    constructor(private fb: FormBuilder, private db: AngularFireDatabase, private titleService: Title, private meta: Meta) {
       this.items = db.list('messages').valueChanges();
 
         this.contactForm = fb.group({
@@ -39,4 +42,25 @@ export class ContactComponent {
       clearForm() {
          this.contactForm.reset();
         }
-  }
+
+        
+
+      
+        ngOnInit() {
+          this.titleService.setTitle(this.title);
+      
+          this.meta.updateTag({
+            name: 'keywords',
+            content:
+              'contact, allen pavic, wordpress developer, angular developer, gold coast, queensland, australia'
+          });
+      
+          this.meta.updateTag({
+            name: 'description',
+            content:
+              'Contact Allen Pavic for your next Web Development project, WordPress or Angular development here on the Gold Coast.'
+          });
+        }
+      }
+
+

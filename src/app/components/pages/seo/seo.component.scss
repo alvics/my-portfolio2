@@ -84,6 +84,9 @@ img {
   width: 100%;
   color: #33b5e5;
 }
+.gap {
+  height: 80px;
+}
 
 .btn {
   display: block;
@@ -92,14 +95,17 @@ img {
   background-color: #33b5e5;
 }
 
-#mocks {
-  img {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    width: 400px;
-    padding: 0 0;
-  }
+// #mocks {
+//   img {
+//     display: block;
+//     margin: 0 auto;
+//     padding: 0 0;
+//     margin-left: -40px;
+//   }
+// }
+
+.col-md-6 {
+  margin-left: -10px !important;
 }
 
 .container-fluid {
@@ -127,5 +133,8 @@ img {
     display: block;
     margin: 0 auto;
     width: 100%;
+  }
+  .whyus {
+    margin-left: 100px !important;
   }
 }

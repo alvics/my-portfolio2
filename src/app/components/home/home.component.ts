@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  title = 'Allen Pavic | Web Developer';
 
+  constructor(private titleService: Title) {}
+
+  ngOnInit() {
+    this.titleService.setTitle(this.title);
+  }
 }
