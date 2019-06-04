@@ -16,7 +16,10 @@ hr {
 }
 
 a {
-  color: #fff;
+  color:#fff;
+  &:hover {
+    color:#33b5e5;
+  }
 }
 .overlay {
   margin-top: 150px;

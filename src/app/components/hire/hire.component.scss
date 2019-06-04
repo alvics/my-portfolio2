@@ -58,9 +58,21 @@ h5 {
   font-family: 'Courier New', Courier, monospace;
   line-height: 0.5em;
 }
-a {
-  color: #fff;
+.md-form {
+a{  color: #323232 !important;
+  &:hover{
+    color:#33b5e5 !important;
+  }
 }
+}
+
+a {
+  color:#fff;
+  &:hover {
+    color:#33b5e5;
+  }
+}
+
 
 .bottomsubhead {
   color: #fff;

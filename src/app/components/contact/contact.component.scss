@@ -40,12 +40,24 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   line-height: 0.5em;
 }
-
-span.x,
+.md-form {
+a{  color: #323232 !important;
+  &:hover{
+    color:#33b5e5 !important;
+  }
+}
+}
+span {
+  .x a {
+    color: #fff;
+  }
+}
 a {
   color: #fff;
+  &:hover {
+    color:#33b5e5;
+  }
 }
-
 .bottomsubhead {
   color: #232323;
   text-align: center;
@@ -90,7 +102,7 @@ a {
   }
   .bottomsubhead h6 {
     font-size: 1.5em;
-   }
+  }
 }
 
 @media (max-width: 450px) {

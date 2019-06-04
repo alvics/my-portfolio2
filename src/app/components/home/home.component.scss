@@ -151,14 +151,6 @@ a:link {
   }
 }
 
-#mocks {
-  img {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    width: 400px;
-  }
-}
 
 img {
   display: block;
@@ -187,3 +179,31 @@ img {
     width: 50%;
   }
 } */
+
+@media (max-width: 767px) {
+  .column-1,
+  .column-2 {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .column-1 {
+    width: 50%;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up)  */
+
+@media (min-width: 992px) {
+  .column-2,
+  .column-1 {
+    width: 33%;
+  }
+  }

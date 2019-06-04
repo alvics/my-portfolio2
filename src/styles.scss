@@ -131,7 +131,7 @@ h5 {
       margin: 0 auto;
     }
   }
-  
+
   /*--------------------*/
   .white-text {
     h5 {
@@ -146,10 +146,13 @@ h5 {
       padding-top: 35px;
     }
   }
-  .pagination[_ngcontent-c4] {
+
+  .pagination {
+    padding: 10px 15px !important;
     margin-top: 60px;
   }
 }
+
 /*------------*/
 
 #responsiveWebsites {

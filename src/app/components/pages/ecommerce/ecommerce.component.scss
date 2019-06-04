@@ -44,7 +44,10 @@
 }
 
 a {
-  color: #fff;
+  color:#fff;
+  &:hover {
+    color:#33b5e5;
+  }
 }
 
 /*  /.End Box-Container */
@@ -112,10 +115,71 @@ a {
     margin: 0 auto;
     width: 100%;
   }
+  #websites {
+    display: none;
+    }
+  
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
-  .col-md-6 {
-    margin-left: -10px !important;
+  @media (min-width: 700px) and (max-width: 900px) {
+    .info {
+      margin-left: -90px;
+    }
+    
+    #whyus2[_ngcontent-c2] h5[_ngcontent-c2]{
+      width:78%;
+    }
+    #row3 h5{
+      font-size: 20px !important;
+      font-weight: 400;
+    }
+    #websites {
+      width:88% !important;
+      }
+  
+      #websitesImg1 {
+       padding: 20px;
+      }
   }
 }
+
+@media (max-width: 767px) {
+  .column-1,
+  .column-2 {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .column-1 {
+    width: 50%;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  #database[_ngcontent-c2] img[_ngcontent-c2] {
+    width:700px !important;
+  }
+  #whyus2[_ngcontent-c2] h5[_ngcontent-c2]{
+    width:78%;
+  }
+  #row3 h5{
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+  .websitesImg1 {
+    padding: 20px;
+   }
+}
+
+/* Large devices (desktops, 992px and up)  */
+
+@media (min-width: 992px) {
+  .column-2,
+  .column-1 {
+    width: 33%;
+  }
+  }
