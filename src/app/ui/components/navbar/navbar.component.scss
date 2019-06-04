@@ -8,22 +8,33 @@
 
 a.nav-link {
   font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
   padding: 5px 20px !important;
+  // color: rgba(0, 0, 0, 0.54) !important;
+
+  //
+  // }
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.54) !important;
+  &:hover {
+    color: rgba(0, 0, 0, 0.87) !important;
+  }
 }
 
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #232323;
+  color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
 }
 
 .fa {
   padding-left: 40px;
-  color: #232323;
+  color: rgba(0, 0, 0, 0.54);
   transition: 0.35s;
 }
 
@@ -31,10 +42,6 @@ a.nav-link {
   color: #33b5e5;
   cursor: pointer;
   transition: 0.35s;
-}
-
-a.nav-link {
-  color: #323232;
 }
 
 .active {
@@ -63,6 +70,17 @@ a.dropdown-item.active {
   color: #33b5e5 !important;
 }
 
+.fa-chevron-down {
+  display: none;
+}
+li:hover .fa-chevron-down {
+  position: absolute;
+  display: inline-block;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.54) !important;
+
+}
+
 /*-----------------------
 -------underline---------
 ----------------------- */
@@ -85,6 +103,11 @@ a.dropdown-item.active {
 }
 
 .header-nav-item:hover span {
+  width: 75%;
+  margin-left: 15px;
+}
+
+.header-nav-item:active span {
   width: 75%;
   margin-left: 15px;
 }
