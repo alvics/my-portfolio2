@@ -34,6 +34,8 @@ import { PaginationComponent } from './ui/components/pagination/pagination.compo
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
 import { ConsoleTextComponent } from './ui/components/console-text/console-text.component';
+import { BackbtnComponent } from './ui/components/backbtn/backbtn.component';
+import { BackButtonDirective } from './back-button.directive';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { ConsoleTextComponent } from './ui/components/console-text/console-text.
     PaginationComponent,
     ContactModalComponent,
     GoogleMapsComponent,
-    ConsoleTextComponent
+    ConsoleTextComponent,
+    BackbtnComponent,
+    BackButtonDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'starter-mdbootstrap' }),
