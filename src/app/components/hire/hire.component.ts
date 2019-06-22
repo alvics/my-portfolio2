@@ -56,6 +56,8 @@ export class HireComponent implements OnInit {
     });
   }
   onSubmit() {
+    alert('Your message has been sent.');
+    
     this.db.list('/messages').push({
       name: this.itemName,
       email: this.itemEmail,
@@ -64,9 +66,12 @@ export class HireComponent implements OnInit {
     });
   }
 
+  clearForm() {
+    this.contactForm.reset();
+  }
+
   ngOnInit() {
     this.titleService.setTitle(this.title);
-
     this.meta.updateTag({
       name: 'keywords',
       content:

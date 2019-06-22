@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs';
-import { resetApplicationState } from '../../../../node_modules/@angular/core/src/render3/instructions';
+// import { resetApplicationState } from '../../../../node_modules/@angular/core/src/render3/instructions';
 import { Title, Meta } from '@angular/platform-browser';
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { fadeInUp, flipInX } from 'ng-animate';

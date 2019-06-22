@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-pagination',
@@ -9,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PaginationComponent implements OnInit {
   currentUrl: string;
 
-  constructor() {
-   
-  }
-  
+  constructor() {}
 
   ngOnInit() {}
 }

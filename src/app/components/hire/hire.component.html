@@ -28,7 +28,7 @@
   <hr />
   <div class="row" [@fadeInUp]>
     <div class="col-md-8">
-      <h4>Thank's for interest in hiring me.</h4>
+      <h4>Please leave a message below</h4>
       <p id="topp" style="text-align: center">
         Interested in discussing projects or collaborating, please leave your
         details below and I'll get back to you ASAP.
@@ -111,6 +111,7 @@
               <button
                 [disabled]="contactForm.invalid"
                 (click)="onSubmit()"
+                (click)="clearForm()"
                 type="submit"
                 class="btn btn waves-light"
                 mdbWavesEffect
