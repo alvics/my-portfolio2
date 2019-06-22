@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -32,6 +33,7 @@ import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
+import { ConsoleTextComponent } from './ui/components/console-text/console-text.component';
 
 @NgModule({
   declarations: [
@@ -56,10 +58,12 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
-    GoogleMapsComponent
+    GoogleMapsComponent,
+    ConsoleTextComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'starter-mdbootstrap' }),
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,

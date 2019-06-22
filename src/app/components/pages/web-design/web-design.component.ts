@@ -1,13 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { transition, trigger, useAnimation } from '@angular/animations';
+import { fadeInUp, flipInX } from 'ng-animate';
 
 @Component({
   selector: 'app-web-design',
   templateUrl: './web-design.component.html',
-  styleUrls: ['./web-design.component.scss']
+  styleUrls: ['./web-design.component.scss'],
+  animations: [
+    trigger('fadeInUp', [
+      transition(
+        '* => *',
+        useAnimation(fadeInUp, {
+          params: { timing: 1, delay: 0 }
+        })
+      )
+    ]),
+    trigger('flipInX', [
+      transition(
+        '* => *',
+        useAnimation(flipInX, {
+          params: { timing: 2, delay: 0 }
+        })
+      )
+    ])
+  ]
 })
 export class WebDesignComponent implements OnInit {
-  page_title = 'Web Design'; 
+  page_title = 'Web Design';
   title = 'Web Design | Allen Pavic';
 
   constructor(private titleService: Title, private meta: Meta) {}

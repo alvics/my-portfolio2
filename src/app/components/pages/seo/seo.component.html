@@ -3,7 +3,7 @@
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
-        <div class="white-text text-center wow fadeInUp">
+        <div [@fadeInUp]="fadeInUp" class="white-text text-center wow fadeInUp">
           <h2>Web Developer Gold Coast</h2>
           <h5>
             <a routerLink="/home">Home</a> >
@@ -23,14 +23,16 @@
 
 <!-- HEADING -->
 <div id="main" class="container">
-  <h1 style="color:#232323">
+  <h1 [@flipInX]="flipInX" style="color:#232323">
     {{ page_title }} Websites by AL<span style="color:#33b5e5">LEN</span> PAVIC
   </h1>
-  <h4 style="color:#232323">Search Engine Optimization to get results</h4>
+  <h4 [@flipInX]="flipInX" style="color:#232323">
+    Search Engine Optimization to get results
+  </h4>
 
   <!-- LEFT 3 ROW ICONS / RIGHT SIDE IMAGE -->
   <div class="box-container mt-5">
-    <div class="row">
+    <div class="row" [@fadeInUp]="fadeInUp">
       <div class="col-md-6">
         <ul>
           <span class="li-header"> Get found by search engines</span>
@@ -99,24 +101,24 @@
 
     <div id="whyus-seo" class="col-md-6 col-sm-12 whyus">
       <div class="info">
-      <div class="usus">
-      <h5 class="mt-5">Why choose us?</h5>
-      <p>
-        <span style="color:#33b5e5; font-weight:bold;"
-          >Affordable website service</span
-        >
-        for small to medium size businesses to get you online professionally,
-        faster and to stay ahead of your competitors.
-      </p>
-      <p>
-        <span style="color:#33b5e5; font-weight:bold;">We guarantee</span> to
-        beat any written quote. Whether you are looking for eCommerce store or a
-        custom website.
-      </p>
-    </div>
+        <div class="usus">
+          <h5 class="mt-5">Why choose us?</h5>
+          <p>
+            <span style="color:#33b5e5; font-weight:bold;"
+              >Affordable website service</span
+            >
+            for small to medium size businesses to get you online
+            professionally, faster and to stay ahead of your competitors.
+          </p>
+          <p>
+            <span style="color:#33b5e5; font-weight:bold;">We guarantee</span>
+            to beat any written quote. Whether you are looking for eCommerce
+            store or a custom website.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
   <!-- /.END GRAPH ROW -->
 </div>
 <!-- /.END CONTAINER -->
@@ -158,7 +160,6 @@
     </div>
     <!-- /.END ROW 3 / ICONS -->
 
-  
     <div class="container gap"></div>
     <!-- /.END / MOCKS -->
     <div class="bottomsubhead">

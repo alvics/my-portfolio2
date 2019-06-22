@@ -2,16 +2,16 @@
 <nav class="my-4">
   <ul class="pagination pagination-circle">
     <!--Arrow left-->
-    <li class="page-item disabled">
+    <!-- <li class="page-item disabled">
       <a class="page-link" mdbWavesEffect aria-label="Previous"> </a>
-    </li>
+    </li> -->
 
     <!-- Class binding / Routes (activated-Numbers) -->
     <li class="page-item" mdbTooltip="Web design" placement="top">
       <a
         class="page-link"
         routerLink="/web-design"
-        [class.activated]="currentUrl == '/web-design'"
+        routerLinkActive="active"
         mdbWavesEffect
         >1</a
       >
@@ -20,7 +20,7 @@
       <a
         class="page-link"
         routerLink="/ecommerce"
-        [class.activated]="currentUrl == '/ecommerce'"
+        routerLinkActive="active"
         mdbWavesEffect
         >2</a
       >
@@ -29,7 +29,7 @@
       <a
         class="page-link"
         routerLink="/seo"
-        [class.activated]="currentUrl == '/seo'"
+        routerLinkActive="active"
         mdbWavesEffect
         >3</a
       >
@@ -37,27 +37,27 @@
     <li class="page-item" mdbTooltip="Responsive websites" placement="top">
       <a
         class="page-link"
-        [class.activated]="currentUrl == '/responsive-websites'"
-        mdbWavesEffect
         routerLink="/responsive-websites"
+        routerLinkActive="active"
+        mdbWavesEffect
         >4</a
       >
     </li>
     <li class="page-item" mdbTooltip="Web development" placement="top">
       <a
         class="page-link"
-        [class.activated]="currentUrl == '/web-development'"
-        mdbWavesEffect
         routerLink="/web-development"
+        routerLinkActive="active"
+        mdbWavesEffect
         >5</a
       >
     </li>
     <li class="page-item" mdbTooltip="Web hosting" placement="top">
       <a
         class="page-link"
-        [class.activated]="currentUrl == '/web-hosting'"
-        mdbWavesEffect
         routerLink="/web-hosting"
+        routerLinkActive="active"
+        mdbWavesEffect
         >6</a
       >
     </li>

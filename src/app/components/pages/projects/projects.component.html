@@ -3,7 +3,7 @@
     <div class="full-bg-img">
         <div class="mask rgba-black-strong flex-center">
             <div class="container">
-                <div class="white-text text-center wow fadeInUp">
+                <div [@fadeInUp]="fadeInUp" class="white-text text-center wow fadeInUp">
                     <h2>Web Developer Gold Coast</h2>
                     <h5><a routerLink="/home">Home</a> > <span style="color:#33b5e5">Projects</span> > AL<span style="color:#33b5e5">LEN</span>
                         PAVIC</h5>
@@ -18,15 +18,15 @@
 
 <!-- HEADER -->
 <div id="projects" class="container">
-    <h1 style="color:#232323">Projects by AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
-    <h4 style="color:#232323">Fully responsive on all devices</h4>
+    <h1 [@flipInX]="flipInX" style="color:#232323">Projects by AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
+    <h4 [@flipInX]="flipInX" style="color:#232323">Fully responsive on all devices</h4>
 </div>
 <hr>
 <app-portfolio></app-portfolio>
 <!-- WordPress API -->
 <div class="space"></div>
 
-<div class="container">
+<div class="container" [@fadeInUp]="fadeInUp">
     <h1 style="color:#232323" class="heading">Layouts</h1>
     <ul>
         <li *ngFor="let page of pages$">

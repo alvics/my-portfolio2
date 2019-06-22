@@ -3,7 +3,7 @@
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
-        <div class="white-text text-center wow fadeInUp">
+        <div [@fadeInUp]="fadeInUp" class="white-text text-center wow fadeInUp">
           <h2>Web Developer Gold Coast</h2>
           <h5>
             <a routerLink="/home">Home</a> >
@@ -23,7 +23,7 @@
 <!-- contact form -->
 
 <div class="container mb-5">
-  <h1 style="text-align:center; font-size:36px">
+  <h1 [@flipInX]="flipInX" style="text-align:center; font-size:36px">
     Request a quote for your website from AL<span style="color:#33b5e5"
       >LEN</span
     >
@@ -32,9 +32,10 @@
 </div>
 <hr />
 <div class="container">
-  <h4 id="top-text" class="mt-5">Online contact form</h4>
+  <h4 [@flipInX]="flipInX" id="top-text" class="mt-5">Online contact form</h4>
   <p>
-    Interested in discussing your ideas, contact me today, for a FREE quote with no obligations.
+    Interested in discussing your ideas, contact me today, for a FREE quote with
+    no obligations.
   </p>
   <div class="row">
     <div class="col-md-8 col-sm-12">
@@ -56,7 +57,9 @@
           <div class="md-form">
             <form [formGroup]="contactForm">
               <p class="h5 text-center mb-4">Contact info</p>
-              <p id="email"><a href="mailto:apavic71@gmail.com">e: apavic71@gmail.com</a></p>
+              <p id="email">
+                <a href="mailto:apavic71@gmail.com">e: apavic71@gmail.com</a>
+              </p>
               <p id="phone"><a href="tel:0404602657">m: 0404 602 657</a></p>
               <div class="md-form">
                 <i class="fa fa-user prefix grey-text"></i>
