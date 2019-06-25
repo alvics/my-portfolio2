@@ -1,5 +1,5 @@
 import { MyErrorHandler } from './myerrorhandler';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule, NO_ERRORS_SCHEMA, ErrorHandler } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,11 +9,13 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { AgmCoreModule } from '@agm/core';
+import { WordPressApiInterceptor } from './wordpress-api.interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './ui/components/header/header.component';
 import { HeroComponent } from './ui/components/hero/hero.component';
@@ -64,7 +66,8 @@ import { BackButtonDirective } from './back-button.directive';
     GoogleMapsComponent,
     ConsoleTextComponent,
     BackbtnComponent,
-    BackButtonDirective
+    BackButtonDirective,
+    BlogDetailsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'starter-mdbootstrap' }),
@@ -82,7 +85,7 @@ import { BackButtonDirective } from './back-button.directive';
     MDBBootstrapModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [{ provide: ErrorHandler, useClass: MyErrorHandler }],
+  providers: [ErrorHandler, MyErrorHandler, WordPressApiInterceptor],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
