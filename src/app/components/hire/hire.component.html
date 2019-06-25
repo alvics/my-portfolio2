@@ -1,85 +1,147 @@
 <!-- Main -->
 <div class="view">
-    <div class="full-bg-img">
-        <div class="mask rgba-black-strong flex-center">
-            <div class="container">
-                <div class="white-text text-center wow fadeInUp">
-                    <h2>Web Developer Gold Coast</h2>
-                    <h5><span style="color:#33b5e5">{{ name }}</span> > AL<span style="color:#33b5e5">LEN</span> PAVIC</h5>
-                    <br>
-                </div>
-            </div>
+  <div class="full-bg-img">
+    <div class="mask rgba-black-strong flex-center">
+      <div class="container">
+        <div [@fadeInUp] class="white-text text-center wow fadeInUp">
+          <h2>Web Developer Gold Coast</h2>
+          <h5>
+            <a routerLink="/home">Home</a> >
+            <span style="color:#33b5e5">{{ name }}</span> > AL<span
+              style="color:#33b5e5"
+              >LEN</span
+            >
+            PAVIC
+          </h5>
+          <br />
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- contact form -->
 <div class="container">
-    <h1 style="text-align: center">Hire a Web Developer AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
-    <hr>
-    <div class="row">
-        <div class="col-md-8">
-            <h4>Thank's for interest in hiring me.</h4>
-            <p id="topp" style="text-align: center">If your interested in discussing projects or hourly rate work please leave your details below and I'll get back to you ASAP.</p>
+  <h1 [@flipInX] style="text-align: center">
+    Hire a Web Developer AL<span style="color:#33b5e5">LEN</span> PAVIC
+  </h1>
+  <hr />
+  <div class="row" [@fadeInUp]>
+    <div class="col-md-8">
+      <h4>Please leave a message below</h4>
+      <p id="topp" style="text-align: center">
+        Interested in discussing projects or collaborating, please leave your
+        details below and I'll get back to you ASAP.
+      </p>
 
-            <div class="card mb-5">
+      <div class="card mb-5">
+        <div class="md-form">
+          <form [formGroup]="contactForm">
+            <button
+              routerLink="/home"
+              class="close waves-effect waves-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
 
-                <div class="md-form">
-
-                    <form [formGroup]="contactForm">
-
-                        <button routerLink="/home" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span></button>
-
-                        <p class="h5 text-center mb-4">Connect with me</p>
-                        <p id="email" class="text-center ">e: apavic71@gmail.com</p>
-                        <p id="phone" class="text-center ">m: 0404 602 657</p>
-
-                        <div class="md-form">
-                            <i class="fa fa-user prefix grey-text"></i>
-                            <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbInputDirective [(ngModel)]="itemName">
-                            <label for="contactFormName">Your name</label>
-                        </div>
-
-                        <div class="md-form">
-                            <i class="fa fa-envelope prefix grey-text"></i>
-                            <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control" mdbInputDirective [(ngModel)]="itemEmail">
-                            <label for="contactFormEmail">Your email</label>
-                        </div>
-
-                        <div class="md-form">
-                            <i class="fa fa-tag prefix grey-text"></i>
-                            <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control" mdbInputDirective [(ngModel)]="itemSubject">
-                            <label for="contactFormSubject">Subject</label>
-                        </div>
-
-                        <div class="md-form">
-                            <i class="fa fa-pencil prefix grey-text"></i>
-                            <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px" mdbInputDirective [(ngModel)]="itemMessage"></textarea>
-                            <label for="contactFormMessage">Your message</label>
-                        </div>
-
-                        <div class="text-center">
-                            <button (click)="onSubmit()" type="submit" class="btn btn waves-light" mdbWavesEffect>Send
-                         <i class="fa fa-paper-plane-o ml-1"></i>
-                                 </button>
-                            <br>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <img class="hire-open" src="/assets/images/aboutme1.jpeg" width="500" alt="">
-            <p style="font-weight: bold">Contactable 7 days a week
+            <p class="h5 text-center mb-4">Connect with me</p>
+            <p id="email" class="text-center ">
+              <a href="mailto:apavic71@gmail.com">e: apavic71@gmail.com</a>
             </p>
-            <img src="assets/images/home.png" width="500" alt="">
+            <p id="phone" class="text-center ">
+              <a href="tel:0404602657">m: 0404 602 657</a>
+            </p>
+
+            <div class="md-form">
+              <i class="fa fa-user prefix grey-text"></i>
+              <input
+                type="text"
+                id="contactFormName"
+                formControlName="contactFormName"
+                class="form-control"
+                mdbInputDirective
+                [(ngModel)]="itemName"
+              />
+              <label for="contactFormName">Your name</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fa fa-envelope prefix grey-text"></i>
+              <input
+                type="email"
+                id="contactFormEmail"
+                formControlName="contactFormEmail"
+                class="form-control"
+                mdbInputDirective
+                [(ngModel)]="itemEmail"
+              />
+              <label for="contactFormEmail">Your email</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fa fa-tag prefix grey-text"></i>
+              <input
+                type="text"
+                id="contactFormSubject"
+                formControlName="contactFormSubject"
+                class="form-control"
+                mdbInputDirective
+                [(ngModel)]="itemSubject"
+              />
+              <label for="contactFormSubject">Subject</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fa fa-pencil prefix grey-text"></i>
+              <textarea
+                type="text"
+                id="contactFormMessage"
+                formControlName="contactFormMessage"
+                class="md-textarea"
+                style="height: 100px"
+                mdbInputDirective
+                [(ngModel)]="itemMessage"
+              ></textarea>
+              <label for="contactFormMessage">Your message</label>
+            </div>
+
+            <div class="text-center">
+              <button
+                [disabled]="contactForm.invalid"
+                (click)="onSubmit()"
+                (click)="clearForm()"
+                type="submit"
+                class="btn btn waves-light"
+                mdbWavesEffect
+              >
+                Send
+                <i class="fa fa-paper-plane-o ml-1"></i>
+              </button>
+              <br />
+            </div>
+          </form>
         </div>
+      </div>
     </div>
+    <div class="col-md-4">
+      <img
+        class="hire-open"
+        src="/assets/images/aboutme1.jpeg"
+        width="500"
+        alt=""
+      />
+      <p style="font-weight: bold">Contactable 7 days a week</p>
+      <img src="assets/images/home.png" width="500" alt="allenpavic" />
+    </div>
+  </div>
 </div>
-<div class="bottomsubhead">
-    <h6>Specializing in Blazing-Fast high quality website</h6>
-    <p>Request rates</p>
+<div class="bottomsubhead pb-5">
+  <h6>Specialising in Blazing-Fast high quality websites!</h6>
+  <p>Request rates</p>
+
+  <app-pagination></app-pagination>
 </div>
 
 <app-footer></app-footer>

@@ -43,6 +43,13 @@
   }
 }
 
+a {
+  color:#fff;
+  &:hover {
+    color:#33b5e5;
+  }
+}
+
 /*  /.End Box-Container */
 
 #row3 {
@@ -82,17 +89,9 @@
   padding-top: 0px;
 }
 
-#mocks {
-  img {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    width: auto;
-    padding: 0;
-  }
-}
 
 .bottomsubhead {
+  margin-top: -40px;
   color: #232323;
   text-align: center;
   padding: 10px 0;
@@ -101,7 +100,7 @@
   }
   p {
     font-size: 16px;
-    padding-bottom: 35px;
+    padding-bottom: 80px;
   }
 }
 
@@ -115,8 +114,6 @@
   background-color: #f8f8f8;
   padding: 35px 0;
 }
-
-
 
 @media (max-width: 767px) {
   .column-1,
@@ -132,6 +129,7 @@
   .column-2 {
     width: 100%;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -140,3 +138,62 @@
     width: 33%;
   }
 }
+
+@media (max-width: 450px) {
+  .view {
+    height: 50vh;
+  }
+  #websitesImg1 {
+    display:none;
+  }
+  #websites {
+    margin-top: -55px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .column-1,
+  .column-2 {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .column-1 {
+    width: 50%;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .info {
+    margin-left: -90px;
+  }
+  
+  #whyus2[_ngcontent-c2] h5[_ngcontent-c2]{
+    width:78%;
+  }
+  #row3 h5{
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+  #websites {
+    width:88% !important;
+    }
+
+    #websitesImg1 {
+     padding: 20px;
+    }
+  
+}
+
+/* Large devices (desktops, 992px and up)  */
+
+@media (min-width: 992px) {
+  .column-2,
+  .column-1 {
+    width: 33%;
+  }
+  }

@@ -1,118 +1,178 @@
 <!-- MAIN HEAD IMAGE-->
 <div class="view">
-    <div class="full-bg-img">
-        <div class="mask rgba-black-strong flex-center">
-            <div class="container">
-                <div class="white-text text-center wow fadeInUp">
-                    <h2>Web Developer Gold Coast</h2>
-                    <h5><span style="color:#33b5e5">{{ title }}</span> > AL<span style="color:#33b5e5">LEN</span> PAVIC</h5>
-                    <br>
-                </div>
-            </div>
+  <div class="full-bg-img">
+    <div class="mask rgba-black-strong flex-center">
+      <div class="container">
+        <div [@fadeInUp] class="white-text text-center wow fadeInUp">
+          <h2>Web Developer Gold Coast</h2>
+          <h5>
+            <a routerLink="/home">Home</a> >
+            <span style="color:#33b5e5">{{ page_title }}</span> > AL<span
+              style="color:#33b5e5"
+              >LEN</span
+            >
+            PAVIC
+          </h5>
+          <br />
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- /.MAIN HEAD IMAGE -->
 
 <!-- HEADING -->
 <div id="main" class="container">
-    <h1 style="color:#232323">{{ title }} Websites by AL<span style="color:#33b5e5">LEN</span> PAVIC</h1>
-    <h4 style="color:#232323">Search Engine Optimization to get results</h4>
+  <h1 [@flipInX] style="color:#232323">
+    {{ page_title }} Websites by AL<span style="color:#33b5e5">LEN</span> PAVIC
+  </h1>
+  <h4 [@flipInX] style="color:#232323">
+    Search Engine Optimization to get results
+  </h4>
 
-    <!-- LEFT 3 ROW ICONS / RIGHT SIDE IMAGE -->
-    <div class="box-container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <ul>
-                    <span class="li-header"> Get found by search engines</span>
-                    <li><i class="material-icons" style="color: #33b5e5">
-                    search
-                    </i>
-                    </li>
-                    <br><span class="li-text">Get found by the major search engines. Creating targeted SEO campaigns to deliver higher traffic to your website.</span>
-                    <span class="li-header">Keyword strategies for industry/niche</span>
-                    <li><i class="material-icons" style="color: #33b5e5">
-                    comment
-                    </i>
-                    </li>
-                    <br>
-                    <span class="li-text">Online social media advertising and pay per click campaigns for your business to achieve higher results. </span>
-                    <span class="li-header"> Monitor website traffic</span>
-                    <li><i class="material-icons" style="color: #33b5e5">
-                    insert_chart_outlined
-                    </i>
-                    </li>
-                    <br>
-                    <span class="li-text">Manage and monitoring your websites traffic to make sure they're increasing for your online business.
-            </span>
-                </ul>
-            </div>
-            <!-- IMAGE RIGHT-SIDE -->
-            <div class="col-md-6 mt-4">
-                <div id="responsive" class="col-md-4 col-sm-12"><img srcset="assets/pages/seo.jpeg" width="500" sizes="(max-width: 474px) 100vw, 474px" alt="">
-                </div>
-            </div>
+  <!-- LEFT 3 ROW ICONS / RIGHT SIDE IMAGE -->
+  <div class="box-container mt-5">
+    <div class="row" [@fadeInUp]>
+      <div class="col-md-6">
+        <ul>
+          <span class="li-header"> Get found by search engines</span>
+          <li>
+            <i class="material-icons" style="color: #33b5e5">
+              search
+            </i>
+          </li>
+          <br /><span class="li-text"
+            >Get found by the major search engines. Creating targeted SEO
+            campaigns to deliver higher traffic to your website.</span
+          >
+          <span class="li-header">Keyword strategies for industry/niche</span>
+          <li>
+            <i class="material-icons" style="color: #33b5e5">
+              comment
+            </i>
+          </li>
+          <br />
+          <span class="li-text"
+            >Online social media advertising and pay per click campaigns for
+            your business to achieve higher results.
+          </span>
+          <span class="li-header"> Monitor website traffic</span>
+          <li>
+            <i class="material-icons" style="color: #33b5e5">
+              insert_chart_outlined
+            </i>
+          </li>
+          <br />
+          <span class="li-text"
+            >Manage and monitoring your websites traffic to make sure they're
+            increasing for your online business.
+          </span>
+        </ul>
+      </div>
+      <!-- IMAGE RIGHT-SIDE -->
+      <div class="col-md-6 mt-4">
+        <div id="responsive" class="col-md-4 col-sm-12">
+          <img
+            class="websitesImg1"
+            srcset="assets/pages/seo.jpeg"
+            width="350"
+            height="auto"
+            sizes="(max-width: 474px) 100vw, 474px"
+            alt="seo websites"
+          />
         </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- IMAGE ROW / WHY US? -->
+  <div class="row mt-5 pb-4">
+    <div class="col-md-6 col-sm-12">
+      <img
+        style="float:left"
+        class="websitesImg1"
+        id="seo-img"
+        src="assets/pages/graph3.jpg"
+        width="350"
+        height="auto"
+        alt="seo"
+      />
     </div>
 
-    <!-- IMAGE ROW / WHY US? -->
-    <div class="row mt-5 pb-4">
-        <div class="col-md-6 col-sm-12"><img src="assets/pages/graph3.jpg" width="500" alt=""></div>
-        <div id="whyus" class="col-md-6 col-sm-12">
-            <h5 class="mt-5">Why choose us?</h5>
-            <p><span style="color:#33b5e5; font-weight:bold;">Affordable website service</span> for small to medium businesses to get you online professionally, faster and a stay ahead of your competitors. </p>
-            <p><span style="color:#33b5e5; font-weight:bold;">We guarantee</span> to beat any written quote. Whether you are looking for eCommerce store or a custom website.</p>
+    <div id="whyus-seo" class="col-md-6 col-sm-12 whyus">
+      <div class="info">
+        <div class="usus">
+          <h5 class="mt-5">Why choose us?</h5>
+          <p>
+            <span style="color:#33b5e5; font-weight:bold;"
+              >Affordable website service</span
+            >
+            for small to medium size businesses to get you online
+            professionally, faster and to stay ahead of your competitors.
+          </p>
+          <p>
+            <span style="color:#33b5e5; font-weight:bold;">We guarantee</span>
+            to beat any written quote. Whether you are looking for eCommerce
+            store or a custom website.
+          </p>
         </div>
+      </div>
     </div>
-    <!-- /.END GRAPH ROW -->
+  </div>
+
+   <!-- Back Button -->
+   <div style="float:right">
+      <app-backbtn></app-backbtn>
+    </div> <!-- ./End Back Button-->
+  <!-- /.END GRAPH ROW -->
 </div>
 <!-- /.END CONTAINER -->
 
 <!-- ROW 3 / ICONS -->
 <div class="container-fluid" style="background-color:#f2f2f2">
-    <div class="container">
-        <div id="row3" class="row mt-3">
-            <div class="col-md-4"><i class="material-icons">
-              playlist_add_check
-              </i>
-                <h5 class="mt-2">SEO ready</h5>
-                <p class="mt-3">With the latest software to help let search engines read your content clearly and index your website to get results.</p>
-            </div>
-            <div class="col-md-4"><i class="material-icons">
-              import_contacts
-              </i>
-                <h5 class="mt-2">Content creation</h5>
-                <p class="mt-3">Creating regular original content for your niche, adding keywords to your website for targeting and SEO practices and more...</p>
-            </div>
-            <div class="col-md-4"><i class="material-icons">
-              trending_up
-            </i>
-                <h5 class="mt-2">Analytics reports</h5>
-                <p class="mt-3">Google analytics dashboard for all your reports, includes traffic numbers, time spent, pages interactions, devices used and more...</p>
-            </div>
-        </div>
-        <!-- /.END ROW 3 / ICONS -->
-
-        <!-- MOCKS -->
-        <div id="mocks" class="row">
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="left">
-                <a data-toggle="modal" data-target="#mock1"><img src="assets/images/mocks/mcascade.png"></a>
-            </div>
-            <app-modal></app-modal>
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="top">
-                <a data-toggle="modal" data-target="#mock2"><img src="assets/images/mocks/mewd.png"></a>
-            </div>
-            <div class="col-md-4" mdbTooltip="WordPress-Project" placement="right">
-                <a data-toggle="modal" data-target="#mock3"><img src="assets/images/mocks/msb.png"></a>
-            </div>
-        </div>
-        <!-- /.END / MOCKS -->
-        <div class="bottomsubhead">
-            <h6>Specializing in Blazing-Fast high quality website</h6>
-            <p class="mb-4">Request a quote</p>
-        </div>
+  <div class="container">
+    <div id="row3" class="row mt-3">
+      <div class="col-md-4">
+        <i class="material-icons">
+          playlist_add_check
+        </i>
+        <h5 class="mt-2">SEO ready</h5>
+        <p class="mt-3">
+          With the latest software to help let search engines read your content
+          clearly and index your website to get results.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="material-icons">
+          import_contacts
+        </i>
+        <h5 class="mt-2">Content creation</h5>
+        <p class="mt-3">
+          Creating regular original content for your niche, adding keywords to
+          your website for targeting and SEO practices and more...
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="material-icons">
+          trending_up
+        </i>
+        <h5 class="mt-2">Analytics reports</h5>
+        <p class="mt-3">
+          Google analytics dashboard for all your reports, includes traffic
+          numbers, time spent, pages interactions, devices used and more...
+        </p>
+      </div>
     </div>
-    <!-- /.END CONTAINER -->
+    <!-- /.END ROW 3 / ICONS -->
+
+    <div class="container gap"></div>
+    <!-- /.END / MOCKS -->
+    <div class="bottomsubhead">
+      <h6>Specialising in Blazing-Fast high quality websites!</h6>
+      <p class="mb-4">Request a quote</p>
+    </div>
+  </div>
+  <!-- /.END CONTAINER -->
 </div>
 <!-- /.END CONTAINER-FLUID -->
 <app-contact-modal></app-contact-modal>

@@ -3,49 +3,76 @@
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
-        <div class="white-text text-center wow fadeInUp">
+        <div [@fadeInUp] class="white-text text-center wow fadeInUp">
           <h2>Web Developer Gold Coast</h2>
           <h5>
-            <span style="color:#33b5e5">Blog</span> > AL<span style="color:#33b5e5">LEN</span> PAVIC</h5>
-          <br>
+            <a routerLink="/home">Home</a> >
+            <span style="color:#33b5e5">Blog</span> > AL<span
+              style="color:#33b5e5"
+              >LEN</span
+            >
+            PAVIC
+          </h5>
+          <br />
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<div class="container pt-5">
+<!-- <div class="container pt-5">
   <div class="overlay">
     <ul>
-      <li *ngFor="let post of posts$">
+      <li *ngFor="let post of restItems">
         <h1>
           <div [innerHTML]="post.title.rendered"></div>
         </h1>
-
         <p [innerHTML]="post.content.rendered"></p>
-
       </li>
     </ul>
   </div>
+</div> -->
+
+<div class="container mt-4">
+  <h2 id="blog-list" class="mt-5 text-center pb-3">Blog List</h2>
+  <section>
+    <div class="box-card" *ngFor="let post of posts$ | async">
+      <mdb-card-img [src]="post.featured_image.medium"></mdb-card-img>
+      <mdb-card-body>
+        <mdb-card-title>
+          <h4 [innerHTML]="post.title"></h4>
+        </mdb-card-title>
+        <mdb-card-text [innerHTML]="post.excerpt"></mdb-card-text>
+
+        <a
+          class="btn btn-primary waves-light"
+          mdbWavesEffect
+          (click)="selectedPost = post"
+        >
+          Read More
+        </a>
+      </mdb-card-body>
+    </div>
+  </section>
 </div>
-<!-- <h2>Blog List</h2>
-  <div class="row">
-    <mdb-card *ngFor="let post of posts$ | async">
-      <mdb-card-img [src]="post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url"></mdb-card-img>
-      <mdb-card-title>
-        <h4>{{ post.title.rendered }}</h4>
-      </mdb-card-title>
-      <mdb-card-text [innerHTML]="post.excerpt.rendered"></mdb-card-text>
-      <mdb-card-title>
-        <p>{{ post.date_gmt | date }}</p>
-      </mdb-card-title>
-      <a [href]="post.link" class="btn btn-primary waves-light" mdbWavesEffect>View</a>
-    </mdb-card>
-  </div> -->
 
-
-
-
-
+<section>
+  <div id="box-container" class="container" *ngIf="selectedPost">
+    <!-- <img [src]="selectedPost.featured_image.large" />  -->
+    <h1 [innerHTML]="selectedPost.title"></h1>
+    <div [innerHTML]="selectedPost.content"></div>
+    <span style="float:right">
+      <!--Scroll to top-->
+      <div
+        class="scroll-to-top"
+        [ngClass]="{ 'show-scrollTop': windowScrolled }"
+      >
+        <button (click)="scrollToTop()">
+          <i class="fa fa-chevron-up"></i> Top
+        </button>
+      </div>
+    </span>
+  </div>
+</section>
+.
 <app-footer></app-footer>

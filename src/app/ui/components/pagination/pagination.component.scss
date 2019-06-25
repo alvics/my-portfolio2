@@ -1,24 +1,28 @@
 .pagination {
-    float: right;
-    padding-right: 60px;
+  float: right;
+  padding-right: 60px;
 }
 
 a.page-link {
-    color: #232323 !important;
+  color: #232323 !important;
 }
 
 a.page-link:visited {
-    color: #fff !important;
-    background-color: #ccc !important;
+  color: #fff !important;
+  background-color: #ccc !important;
 }
 
 a.page-link:hover {
-    color: #fff !important;
-    background-color: #ccc !important;
+  color: #fff !important;
+  background-color: #ccc !important;
 }
 
-@media (max-width: 768px) {
-    .pagination{
-        padding: 50px 0;
-    }
+.activated {
+  background-color: #33b5e5 !important;
 }
+
+// @media (max-width: 768px) {
+//   .pagination {
+//     padding: 50px 0;
+//   }
+// }

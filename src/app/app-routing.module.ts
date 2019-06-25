@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HireComponent } from './components/hire/hire.component';
 import { HomeComponent } from './components/home/home.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'blog-details/:slug', component: BlogDetailsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'hire', component: HireComponent },
   { path: 'web-design', component: WebDesignComponent },
@@ -31,7 +33,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
