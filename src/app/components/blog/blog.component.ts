@@ -40,6 +40,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 export class BlogComponent implements OnInit, OnDestroy {
   title = 'Blog';
   url = 'https://ewebdesigns.com.au/wp-json/api/v1/posts?';
+  selectedPost;
 
   windowScrolled: boolean;
 
