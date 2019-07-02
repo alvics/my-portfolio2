@@ -7,6 +7,6 @@
 
 ### Web app uses routing, http, and firebase, using the WordPress REST API for retrieving data to display in blog and project pages.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
-View project [here](https://allen-pavic-wd.firebaseapp.com/) 
+#### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+#### View project [here](https://allen-pavic-wd.firebaseapp.com/) 
 
