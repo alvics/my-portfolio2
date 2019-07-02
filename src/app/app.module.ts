@@ -33,6 +33,8 @@ import { NavbarComponent } from './ui/components/navbar/navbar.component';
 import { PaginationComponent } from './ui/components/pagination/pagination.component';
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
+import { BackbtnComponent } from './ui/components/backbtn/backbtn.component';
+import { BackButtonDirective } from './back-button.directive';
 
 import { WordPressApiInterceptor } from './wordpress-api.interceptor';
 import { MyErrorHandler } from './myerrorhandler';
@@ -60,7 +62,9 @@ import { MyErrorHandler } from './myerrorhandler';
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
-    GoogleMapsComponent
+    GoogleMapsComponent,
+    BackbtnComponent,
+    BackButtonDirective
   ],
   imports: [
     BrowserModule,
