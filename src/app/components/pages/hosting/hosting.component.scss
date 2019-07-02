@@ -4,9 +4,9 @@
 }
 
 a {
-  color:#fff;
+  color: #fff;
   &:hover {
-    color:#33b5e5;
+    color: #33b5e5;
   }
 }
 /*===============*/
@@ -132,9 +132,6 @@ a {
 }
 
 @media (max-width: 684px) {
-  #main h1 {
-    font-size: 30px;
-  }
   #whyus2 {
     h5,
     li {
@@ -143,8 +140,7 @@ a {
       margin-left: 10px;
       padding: 0 5px;
     }
-   
-}
+  }
 }
 
 @media (max-width: 450px) {
@@ -165,9 +161,7 @@ a {
   #whyus2 #whyus-host {
     display: none !important;
   }
- 
 }
-
 
 @media (min-width: 451px) {
   #whyus2 {
@@ -176,7 +170,6 @@ a {
     }
   }
 }
-
 
 @media (max-width: 767px) {
   .column-1,
@@ -195,18 +188,24 @@ a {
     width: 100%;
   }
   #database[_ngcontent-c2] img[_ngcontent-c2] {
-    width:700px !important;
+    width: 700px !important;
   }
-  #whyus2[_ngcontent-c2] h5[_ngcontent-c2]{
-    width:78%;
+  #whyus2[_ngcontent-c2] h5[_ngcontent-c2] {
+    width: 78%;
   }
-  #row3 h5{
+  #row3 h5 {
     font-size: 20px !important;
     font-weight: 400;
   }
   .websitesImg1 {
     padding: 20px;
-   }
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+  #whyus2[_ngcontent-c2] h5[_ngcontent-c2] {
+    width: 55%;
+  }
 }
 
 /* Large devices (desktops, 992px and up)  */
@@ -216,4 +215,4 @@ a {
   .column-1 {
     width: 33%;
   }
-  }
+}

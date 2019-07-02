@@ -1,7 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, ErrorHandler } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -33,9 +34,8 @@ import { PaginationComponent } from './ui/components/pagination/pagination.compo
 import { ContactModalComponent } from './ui/components/contact-modal/contact-modal.component';
 import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.component';
 
-
-
-
+import { WordPressApiInterceptor } from './wordpress-api.interceptor';
+import { MyErrorHandler } from './myerrorhandler';
 
 @NgModule({
   declarations: [
@@ -60,16 +60,14 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     HeaderComponent,
     PaginationComponent,
     ContactModalComponent,
-    GoogleMapsComponent,
-
-
-
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule.withConfig({ warnOnNgModelWithFormControl: 'never' }),
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
     AngularFireModule,
@@ -80,7 +78,7 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
     MDBBootstrapModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [ErrorHandler, MyErrorHandler, WordPressApiInterceptor],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

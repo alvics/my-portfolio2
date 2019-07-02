@@ -1,23 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-<<<<<<< HEAD
-=======
 import { DomSanitizer } from '@angular/platform-browser';
 import { map } from 'rxjs/operators';
 import { SafePost } from './safe-post.interface';
->>>>>>> firebase
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-<<<<<<< HEAD
-  constructor(private http: HttpClient) {}
-
-  getPosts() {
-    return this.http.get('https://ewebdesigns.com.au/wp-json/wp/v2/posts?');
-=======
-  protected url: string = 'https://ewebdesigns.com.au/wp-json/api/v1/posts?';
+  protected url = 'https://ewebdesigns.com.au/wp-json/api/v1/posts?';
   featured_image: Object;
   constructor(private http: HttpClient, public sanitizer: DomSanitizer) {}
 
@@ -52,7 +43,6 @@ export class DataService {
         return mySafePosts;
       })
     );
->>>>>>> firebase
   }
 
   getLayouts() {

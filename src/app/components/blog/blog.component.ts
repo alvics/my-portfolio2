@@ -45,7 +45,7 @@ export class BlogComponent implements OnInit, OnDestroy {
   windowScrolled: boolean;
 
   @HostListener('window:scroll', [])
-  posts$: Object;
+  posts: Object;
   featured_image: Object;
   subsciption: Subscription;
   constructor(
@@ -56,7 +56,7 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.headerService.currentTitle.subscribe(title => (this.title = title));
-    this.posts$ = this.getRestItems$();
+    this.posts = this.getRestItems$();
 
     this.subsciption = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))

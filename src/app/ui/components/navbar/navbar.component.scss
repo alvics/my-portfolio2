@@ -113,6 +113,10 @@ li:hover .fa-chevron-down {
   margin-left: 15px;
 }
 
+.social-icons {
+  justify-content: flex-end;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-nav-item:hover span {
     width: 90%;

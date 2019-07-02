@@ -96,6 +96,13 @@ a {
   }
 }
 
+.banner{
+  padding: 0 20px;
+  h6{
+    font-size:1.5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .card {
     width: 100%;

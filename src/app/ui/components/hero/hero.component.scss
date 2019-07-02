@@ -1,52 +1,54 @@
 #shadow {
-    padding: 10px 0;
-    height: 10px;
+  padding: 10px 0;
+  height: 10px;
 }
 
 .view {
-    background: url("/assets/images/img2_p.jpg")no-repeat center center;
-    background-size: cover;
-    height: 70vh;
+  background: url('/assets/images/img2_p.jpg') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
 }
 
 .view {
-    .white-text {
-        margin-top: -60px;
-    }
+  .white-text {
+    margin-top: -60px;
+  }
 }
 
 .container {
-    height: 200px;
-    padding-bottom: 0px;
-    margin-bottom: -130px;
-    width: 50%;
+  height: 200px;
+  padding-bottom: 0px;
+  margin-bottom: -130px;
+  width: 50%;
 }
 
 .navbar {
-    z-index: 1;
+  z-index: 1;
 }
 
 a {
-    color: #fff;
+  color: #fff;
 }
 
 #banner {
-    height: 80px;
-    width: 100%;
-    background-color: #e3e5e7;
+  height: 80px;
+  width: 100%;
+  background-color: #e3e5e7;
 }
 
 span.banner-text {
-    text-align: center;
-    padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
 }
-
 
 /* -----------------------------------------
 --------   @media Query's   ----------------
 -------------------------------------------*/
 @media (max-width: 450px) {
-    .view{
-        height: 100vh;
-    }
+  .view {
+    height: 100vh;
+  }
+  .btn {
+    width: 100% !important;
+  }
 }
