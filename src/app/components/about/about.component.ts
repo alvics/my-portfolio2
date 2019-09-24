@@ -27,7 +27,8 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class AboutComponent implements OnInit {
-  defaultImage = '/assets/images/img2_p.jpg';
+  defaultImage =
+    'https://ewebdesigns.com.au/wp-content/uploads/2019/09/blurred-min.jpg';
   image = '/assets/images/img2_p.jpg';
 
   home_title = 'Web hosting';

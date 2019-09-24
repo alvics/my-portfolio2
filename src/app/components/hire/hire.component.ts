@@ -30,7 +30,8 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class HireComponent implements OnInit {
-  defaultImage = '/assets/images/hero1.jpeg';
+  defaultImage =
+    'https://ewebdesigns.com.au/wp-content/uploads/2019/09/blurred-min.jpg';
   image = '/assets/images/hero1.jpeg';
 
   name = 'Hire me';
