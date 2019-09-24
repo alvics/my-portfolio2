@@ -1,5 +1,5 @@
 .view {
-  background: url('/assets/images/img2_p.jpg') no-repeat center center;
+  //background: url('/assets/images/img2_p.jpg') no-repeat center center;
   background-size: cover;
   height: 70vh;
   border-bottom: solid 3px #33b5e5;
@@ -8,7 +8,7 @@
 
 h2 {
   color: #fff;
-  font-size:1.75rem;
+  font-size: 1.75rem;
 }
 a {
   color: #fff;
@@ -17,8 +17,8 @@ a {
   }
 }
 
- #blog-list {
-  color:#232323;
+#blog-list {
+  color: #232323;
 }
 
 section {
@@ -63,6 +63,3 @@ pre .language-markup {
   background-color: #f2f2f2;
   padding: 30px;
 }
-
-
-

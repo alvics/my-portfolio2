@@ -31,6 +31,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class ContactComponent implements OnInit {
+  defaultImage = '/assets/images/gc1.jpg';
+  image = '/assets/images/gc1.jpg';
+
   name = 'Contact';
   itemName = '';
   itemEmail = '';

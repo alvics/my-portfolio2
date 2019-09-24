@@ -1,5 +1,5 @@
 <!-- MAIN HEADER -->
-<div class="view">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
@@ -9,8 +9,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">{{ page_title }}</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <br />
@@ -45,16 +44,12 @@
           </span>
           <span class="li-header">WordPress Development</span>
           <li>
-            <i
-              class="fa fa-wordpress"
-              style="color: #33b5e5; font-size: 50px;"
-            ></i>
+            <i class="fa fa-wordpress" style="color: #33b5e5; font-size: 50px;"></i>
           </li>
           <br />
           <span class="li-text"
             >Easily managed and customizable websites from catalogue to
-            eCommerce, blogs and more.</span
-          >
+            eCommerce, blogs and more.</span>
           <span class="li-header"> Angular / WordPress</span>
           <li>
             <i class="material-icons" style="color: #33b5e5;">
@@ -72,14 +67,8 @@
       <!-- IMAGE RIGHT-SIDE -->
       <div class="col-md-6 mt-4">
         <div id="responsive" class="col-md-4 col-sm-12">
-          <img
-            class="websitesImg"
-            id="websitesImg1"
-            src="assets/pages/websites2.png"
-            width="350"
-            height="auto"
-            alt="responsive websites"
-          />
+          <img class="websitesImg" id="websitesImg1" src="assets/pages/websites2.png" width="350" height="auto"
+            alt="responsive websites" />
         </div>
       </div>
     </div>
@@ -91,13 +80,7 @@
   <div class="container">
     <div class="row mt-5 pb-4">
       <div class="col-md-6 col-sm-12">
-        <img
-          class="websitesImg"
-          src="assets/pages/websites1.png"
-          width="350"
-          height="auto"
-          alt="responsive websites"
-        />
+        <img class="websitesImg" src="assets/pages/websites1.png" width="350" height="auto" alt="responsive websites" />
       </div>
       <!-- WHY CHOOSE US -->
       <div id="whyus-develop" class="col-md-6 col-sm-12 whyus">
@@ -105,16 +88,10 @@
           <h5 class="mt-5">Why choose us?</h5>
           <p>
             <span style="color:#33b5e5; font-weight:bold;"
-              >Affordable website service</span
-            >
+              >Affordable website service</span>
             for small to medium size businesses to get you online
             professionally, faster and to stay ahead of your competitors.
-            <a
-              id="contact-us-today"
-              style="color:#33b5e5;"
-              routerLink="/contact"
-              >Contact us today.</a
-            >
+            <a id="contact-us-today" style="color:#33b5e5;" routerLink="/contact">Contact us today.</a>
           </p>
           <p>
             <span style="color:#33b5e5; font-weight:bold;">We guarantee</span>
@@ -173,19 +150,13 @@
     <!-- MOCKS -->
     <div id="mocks" class="row">
       <div class="column-1 px-2" mdbTooltip="WordPress-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock1"
-          ><img class="img-fluid" src="assets/images/mocks/mcascade.png"
-        /></a>
+        <a data-toggle="modal" data-target="#mock1"><img class="img-fluid" src="assets/images/mocks/mcascade.png" /></a>
       </div>
       <div class="column-1 px-2" mdbTooltip="WordPress-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock2"
-          ><img class="img-fluid" src="assets/images/mocks/mewd.png"
-        /></a>
+        <a data-toggle="modal" data-target="#mock2"><img class="img-fluid" src="assets/images/mocks/mewd.png" /></a>
       </div>
       <div class="column-2 px-2" mdbTooltip="WordPress-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock3"
-          ><img class="img-fluid" src="assets/images/mocks/msb.png"
-        /></a>
+        <a data-toggle="modal" data-target="#mock3"><img class="img-fluid" src="assets/images/mocks/msb.png" /></a>
       </div>
     </div>
     <!-- MODAL COMPONENT -->

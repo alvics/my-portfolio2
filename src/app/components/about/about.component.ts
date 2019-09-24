@@ -3,7 +3,6 @@ import { Title, Meta } from '@angular/platform-browser';
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { fadeInUp, flipInX } from 'ng-animate';
 
-
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -28,13 +27,15 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class AboutComponent implements OnInit {
+  defaultImage = '/assets/images/img2_p.jpg';
+  image = '/assets/images/img2_p.jpg';
 
   home_title = 'Web hosting';
   title = 'About | Allen Pavic';
 
   constructor(private titleService: Title, private meta: Meta) {}
 
-   ngOnInit() {
+  ngOnInit() {
     this.titleService.setTitle(this.title);
 
     this.meta.updateTag({
@@ -49,5 +50,4 @@ export class AboutComponent implements OnInit {
         'About Allen Pavic, web developer on the Gold Coast, Australia.  Focusing technologies is WordPress, Angular and Ionic development.'
     });
   }
-
 }

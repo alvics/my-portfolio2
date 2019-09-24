@@ -1,15 +1,18 @@
 <!-- Main -->
 <header class="h-100">
-    <div class="view">
+    <div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
         <div class="full-bg-img">
             <div class="mask rgba-black-strong flex-center">
                 <div class="container">
                     <div [@fadeInUp] class="white-text text-center wow fadeInUp">
                         <h2>Web Developer based on the Gold Coast, Aust.</h2>
-                        <h5 id="heroT">Focusing technologies, Angular, Ionic & WordPress</h5>
+                        <h5 id="heroT">Focusing technologies, Angular, NativeScript & WordPress</h5>
                         <br>
-                        <p id="heroP">Business seeking a web presence or an employer looking to hire, please get intouch. </p>
-                        <button class="btn btn-danger waves-light" mdbWavesEffect routerLink="/contact"> I need a website</button><button class="btn btn-info waves-light" mdbWavesEffect routerLink="/hire">I'm looking to hire</button>
+                        <p id="heroP">Business seeking a web presence or an employer looking to hire, please get
+                            intouch. </p>
+                        <button class="btn btn-danger waves-light" mdbWavesEffect routerLink="/contact"> I need a
+                            website</button><button class="btn btn-info waves-light" mdbWavesEffect
+                            routerLink="/hire">I'm looking to hire</button>
                     </div>
                 </div>
             </div>

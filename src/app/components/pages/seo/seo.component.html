@@ -1,5 +1,5 @@
 <!-- MAIN HEAD IMAGE-->
-<div class="view">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
@@ -9,8 +9,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">{{ page_title }}</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <br />
@@ -43,8 +42,7 @@
           </li>
           <br /><span class="li-text"
             >Get found by the major search engines. Creating targeted SEO
-            campaigns to deliver higher traffic to your website.</span
-          >
+            campaigns to deliver higher traffic to your website.</span>
           <span class="li-header">Keyword strategies for industry/niche</span>
           <li>
             <i class="material-icons" style="color: #33b5e5">
@@ -72,31 +70,18 @@
       <!-- IMAGE RIGHT-SIDE -->
       <div class="col-md-6 mt-4">
         <div id="responsive" class="col-md-4 col-sm-12">
-          <img
-            class="websitesImg1"
-            srcset="assets/pages/seo.jpeg"
-            width="350"
-            height="auto"
-            sizes="(max-width: 474px) 100vw, 474px"
-            alt="seo websites"
-          />
+          <img class="websitesImg1" srcset="assets/pages/seo.jpeg" width="350" height="auto"
+            sizes="(max-width: 474px) 100vw, 474px" alt="seo websites" />
         </div>
       </div>
     </div>
   </div>
- 
+
   <!-- IMAGE ROW / WHY US? -->
   <div class="row mt-5 pb-4">
     <div class="col-md-6 col-sm-12">
-      <img
-        style="float:left"
-        class="websitesImg1"
-        id="seo-img"
-        src="assets/pages/graph3.jpg"
-        width="350"
-        height="auto"
-        alt="seo"
-      />
+      <img style="float:left" class="websitesImg1" id="seo-img" src="assets/pages/graph3.jpg" width="350" height="auto"
+        alt="seo" />
     </div>
 
     <div id="whyus-seo" class="col-md-6 col-sm-12 whyus">
@@ -105,15 +90,10 @@
           <h5 class="mt-5">Why choose us?</h5>
           <p>
             <span style="color:#33b5e5; font-weight:bold;"
-              >Affordable website service</span
-            >
+              >Affordable website service</span>
             for small to medium size businesses to get you online
-            professionally, faster and to stay ahead of your competitors. <a
-            id="contact-us-today"
-            style="color:#33b5e5;"
-            routerLink="/contact"
-            >Contact us today.</a
-          >
+            professionally, faster and to stay ahead of your competitors. <a id="contact-us-today"
+              style="color:#33b5e5;" routerLink="/contact">Contact us today.</a>
           </p>
           <p>
             <span style="color:#33b5e5; font-weight:bold;">We guarantee</span>
@@ -125,10 +105,10 @@
     </div>
   </div>
 
-   <!-- Back Button -->
-   <div style="float:right">
-      <app-backbtn></app-backbtn>
-    </div> <!-- ./End Back Button-->
+  <!-- Back Button -->
+  <div style="float:right">
+    <app-backbtn></app-backbtn>
+  </div> <!-- ./End Back Button-->
   <!-- /.END GRAPH ROW -->
 </div>
 <!-- /.END CONTAINER -->

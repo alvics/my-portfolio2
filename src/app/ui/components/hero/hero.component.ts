@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { fadeInUp} from 'ng-animate';
+import { fadeInUp } from 'ng-animate';
 
 @Component({
   selector: 'app-hero',
@@ -19,6 +19,9 @@ import { fadeInUp} from 'ng-animate';
 })
 export class HeroComponent implements OnInit {
   constructor() {}
+
+  defaultImage = '/assets/images/img2_p.jpg';
+  image = '/assets/images/img2_p.jpg';
 
   ngOnInit() {}
 }

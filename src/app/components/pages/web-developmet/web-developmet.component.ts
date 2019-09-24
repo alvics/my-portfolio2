@@ -27,6 +27,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class WebDevelopmetComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   page_title = 'Web Development';
   title = 'Web Development | Allen Pavic';
 

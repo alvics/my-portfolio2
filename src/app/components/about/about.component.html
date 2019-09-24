@@ -1,5 +1,5 @@
 <!-- MAIN HEADER -->
-<div class="view">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
@@ -8,8 +8,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">About me</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <h2 id="ap">Web Developer Gold Coast</h2>
@@ -51,8 +50,7 @@
       <div class="card">
         <h3>About me</h3>
 
-        <P
-          >Gold Coast based web developer working with the latest technologies
+        <P>Gold Coast based web developer working with the latest technologies
           creating engaging websites with WordPress for businesses which
           includes eCommerce, blogs, business and portfolio sites. I Enjoy
           transforming designs into online web application and focusing on
@@ -130,9 +128,7 @@
   </div>
   <h6 class="mt-5" style="color:#232323; float:right;">
     Back to the
-    <a routerLink="/home"
-      ><span style="color:#33b5e5;font-weight:bold;">home page</span></a
-    >
+    <a routerLink="/home"><span style="color:#33b5e5;font-weight:bold;">home page</span></a>
   </h6>
 </div>
 <div class="col-md-12  col-sm-12">
@@ -156,18 +152,10 @@
       <img src="assets/images/magpies.jpg" height="100" alt="magpies jersey" />
     </div>
     <div id="qld" class="col-md-4">
-      <img
-        src="assets/images/qld.png"
-        height="100"
-        alt="qld state of orgin logo"
-      />
+      <img src="assets/images/qld.png" height="100" alt="qld state of orgin logo" />
     </div>
     <div id="liverpool" class="col-md-4">
-      <img
-        src="assets/images/Liverpool.png"
-        height="110"
-        alt="qld state of orgin logo"
-      />
+      <img src="assets/images/Liverpool.png" height="110" alt="qld state of orgin logo" />
     </div>
   </div>
 </div>

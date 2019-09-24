@@ -1,5 +1,5 @@
 <!-- Main -->
-<div class="view">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
@@ -9,8 +9,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">Blog</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <br />
@@ -44,11 +43,7 @@
         </mdb-card-title>
         <mdb-card-text [innerHTML]="post.excerpt"></mdb-card-text>
 
-        <a
-          class="btn btn-primary waves-light"
-          mdbWavesEffect
-          (click)="selectedPost = post"
-        >
+        <a class="btn btn-primary waves-light" mdbWavesEffect (click)="selectedPost = post">
           Read More
         </a>
       </mdb-card-body>

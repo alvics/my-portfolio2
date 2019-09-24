@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { transition, trigger, useAnimation } from '@angular/animations';
-import { fadeInUp, flipInX} from 'ng-animate';
+import { fadeInUp, flipInX } from 'ng-animate';
 
 @Component({
   selector: 'app-hosting',
@@ -27,6 +27,9 @@ import { fadeInUp, flipInX} from 'ng-animate';
   ]
 })
 export class HostingComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   home_title = 'Web hosting';
   title = 'Web Hosting | Allen Pavic';
   constructor(private titleService: Title, private meta: Meta) {}

@@ -27,6 +27,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class EcommerceComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   home_title = 'eCommerce';
   title = 'eCommerce Websites ALLEN PAVIC';
 

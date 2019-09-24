@@ -27,6 +27,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class SeoComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   page_title = 'SEO';
   title = 'SEO Websites | Allen Pavic';
 

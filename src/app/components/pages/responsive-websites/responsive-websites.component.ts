@@ -27,6 +27,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class ResponsiveWebsitesComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   page_title = 'Responsive';
 
   title = 'Responsive Websites | Allen Pavic';

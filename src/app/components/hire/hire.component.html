@@ -1,5 +1,5 @@
 <!-- Main -->
-<div class="view">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
   <div class="full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
@@ -9,8 +9,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">{{ name }}</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <br />
@@ -37,12 +36,7 @@
       <div class="card mb-5">
         <div class="md-form">
           <form [formGroup]="contactForm">
-            <button
-              routerLink="/home"
-              class="close waves-effect waves-light"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button routerLink="/home" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
@@ -56,66 +50,35 @@
 
             <div class="md-form">
               <i class="fa fa-user prefix grey-text"></i>
-              <input
-                type="text"
-                id="contactFormName"
-                formControlName="contactFormName"
-                class="form-control"
-                mdbInputDirective
-                [(ngModel)]="itemName"
-              />
+              <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control"
+                mdbInputDirective [(ngModel)]="itemName" />
               <label for="contactFormName">Your name</label>
             </div>
 
             <div class="md-form">
               <i class="fa fa-envelope prefix grey-text"></i>
-              <input
-                type="email"
-                id="contactFormEmail"
-                formControlName="contactFormEmail"
-                class="form-control"
-                mdbInputDirective
-                [(ngModel)]="itemEmail"
-              />
+              <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control"
+                mdbInputDirective [(ngModel)]="itemEmail" />
               <label for="contactFormEmail">Your email</label>
             </div>
 
             <div class="md-form">
               <i class="fa fa-tag prefix grey-text"></i>
-              <input
-                type="text"
-                id="contactFormSubject"
-                formControlName="contactFormSubject"
-                class="form-control"
-                mdbInputDirective
-                [(ngModel)]="itemSubject"
-              />
+              <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control"
+                mdbInputDirective [(ngModel)]="itemSubject" />
               <label for="contactFormSubject">Subject</label>
             </div>
 
             <div class="md-form">
               <i class="fa fa-pencil prefix grey-text"></i>
-              <textarea
-                type="text"
-                id="contactFormMessage"
-                formControlName="contactFormMessage"
-                class="md-textarea"
-                style="height: 100px"
-                mdbInputDirective
-                [(ngModel)]="itemMessage"
-              ></textarea>
+              <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea"
+                style="height: 100px" mdbInputDirective [(ngModel)]="itemMessage"></textarea>
               <label for="contactFormMessage">Your message</label>
             </div>
 
             <div class="text-center">
-              <button
-                [disabled]="contactForm.invalid"
-                (click)="onSubmit()"
-                (click)="clearForm()"
-                type="submit"
-                class="btn btn waves-light"
-                mdbWavesEffect
-              >
+              <button [disabled]="contactForm.invalid" (click)="onSubmit()" (click)="clearForm()" type="submit"
+                class="btn btn waves-light" mdbWavesEffect>
                 Send
                 <i class="fa fa-paper-plane-o ml-1"></i>
               </button>
@@ -143,10 +106,10 @@
   <app-google-maps></app-google-maps>
 </div> <!-- ./end container-->
 <div class="bottomsubhead pb-5">
- <div class="banner">
-  <h6>Specialising in Blazing-Fast high quality websites!</h6>
-  <p>Request rates</p>
-</div>
+  <div class="banner">
+    <h6>Specialising in Blazing-Fast high quality websites!</h6>
+    <p>Request rates</p>
+  </div>
   <app-pagination></app-pagination>
 </div>
 

@@ -1,6 +1,6 @@
 <!-- MAIN HEADER-->
-<div class="view">
-  <div class="full-bg-img">
+<div class="view" [defaultImage]="defaultImage" [lazyLoad]="image" [useSrcset]="true">
+  <div class=" full-bg-img">
     <div class="mask rgba-black-strong flex-center">
       <div class="container">
         <div [@fadeInUp] class="white-text text-center wow fadeInUp">
@@ -9,8 +9,7 @@
             <a routerLink="/home">Home</a> >
             <span style="color:#33b5e5">{{ home_title }}</span> > AL<span
               style="color:#33b5e5"
-              >LEN</span
-            >
+              >LEN</span>
             PAVIC
           </h5>
           <br />
@@ -38,10 +37,7 @@
         <ul>
           <span class="li-header"> Secure Database</span>
           <li>
-            <i
-              class="fa fa-database"
-              style="color: #33b5e5; font-size: 50px;"
-            ></i>
+            <i class="fa fa-database" style="color: #33b5e5; font-size: 50px;"></i>
           </li>
           <br /><span class="li-text"
             >Security at its core, WAF, DDoS protection, and SSL defended
@@ -55,15 +51,11 @@
           <br />
           <span class="li-text"
             >Using Australian servers together with the best hosting providers
-            to deliver premium web hosting.</span
-          >
+            to deliver premium web hosting.</span>
           <span class="li-header"> Server</span>
 
           <li>
-            <i
-              class="fa fa-server"
-              style="color: #33b5e5; font-size: 50px;"
-            ></i>
+            <i class="fa fa-server" style="color: #33b5e5; font-size: 50px;"></i>
           </li>
           <br />
           <span class="li-text"
@@ -75,13 +67,7 @@
       <!-- IMAGE RIGHT-SIDE -->
       <div class="col-md-6 mt-4">
         <div id="responsive" class="col-md-4 col-sm-12">
-          <img
-            class="websitesImg1"
-            srcset="assets/images/hosting2.jpeg"
-            width="350"
-            height="auto"
-            alt="web hosting"
-          />
+          <img class="websitesImg1" srcset="assets/images/hosting2.jpeg" width="350" height="auto" alt="web hosting" />
         </div>
       </div>
       <!-- /.END IMAGE RIGHT-SIDE -->
@@ -96,22 +82,13 @@
 <div class="container">
   <div class="row mt-5 pb-4">
     <div id="database" class="col-md-6 col-sm-12">
-      <img
-        class="websitesImg2"
-        src="assets/pages/data.jpeg"
-        height="442"
-        alt="web hosting servers"
-      />
+      <img class="websitesImg2" src="assets/pages/data.jpeg" height="442" alt="web hosting servers" />
     </div>
 
     <!-- WHY CHOOSE US -->
     <div id="whyus2" class="col-md-6 col-sm-12 whyus">
       <h5 id="whyus-host" class="mt-5">Why choose us?</h5>
-      <h4
-        id="smallScreenOnly"
-        class="text-center"
-        style="color:#fff; background-color:#33b5e5;"
-      >
+      <h4 id="smallScreenOnly" class="text-center" style="color:#fff; background-color:#33b5e5;">
         Why choose us?
       </h4>
       <ul class="host-why-us">
@@ -172,19 +149,14 @@
     <!-- MOCKS -->
     <div class="row">
       <div class="column-2 px-2" mdbTooltip="Angular-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock4"
-          ><img class="img-fluid" src="assets/images/mocks/aroma_store.jpg"
-        /></a>
+        <a data-toggle="modal" data-target="#mock4"><img class="img-fluid"
+            src="assets/images/mocks/aroma_store.jpg" /></a>
       </div>
       <div class="column-1 px-2" mdbTooltip="WordPress-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock1"
-          ><img class="img-fluid" src="assets/images/mocks/mcascade.png"
-        /></a>
+        <a data-toggle="modal" data-target="#mock1"><img class="img-fluid" src="assets/images/mocks/mcascade.png" /></a>
       </div>
       <div class="column-1 px-2" mdbTooltip="WordPress-Project" placement="top">
-        <a data-toggle="modal" data-target="#mock7"
-          ><img class="img-fluid" src="assets/images/mocks/moll.png"
-        /></a>
+        <a data-toggle="modal" data-target="#mock7"><img class="img-fluid" src="assets/images/mocks/moll.png" /></a>
       </div>
     </div>
     <!-- MODAL COMPONENT -->

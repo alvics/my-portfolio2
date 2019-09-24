@@ -30,6 +30,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class HireComponent implements OnInit {
+  defaultImage = '/assets/images/hero1.jpeg';
+  image = '/assets/images/hero1.jpeg';
+
   name = 'Hire me';
   itemName = '';
   itemEmail = '';
@@ -57,7 +60,7 @@ export class HireComponent implements OnInit {
   }
   onSubmit() {
     alert('Your message has been sent.');
-    
+
     this.db.list('/messages').push({
       name: this.itemName,
       email: this.itemEmail,

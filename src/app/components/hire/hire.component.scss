@@ -1,5 +1,5 @@
 .view {
-  background: url('/assets/images/hero1.jpeg') no-repeat center center;
+  //background: url('/assets/images/hero1.jpeg') no-repeat center center;
   background-size: cover;
   height: 50vh;
   border-bottom: solid 3px #33b5e5;
@@ -59,20 +59,20 @@ h5 {
   line-height: 0.5em;
 }
 .md-form {
-a{  color: #323232 !important;
-  &:hover{
-    color:#33b5e5 !important;
+  a {
+    color: #323232 !important;
+    &:hover {
+      color: #33b5e5 !important;
+    }
   }
-}
 }
 
 a {
-  color:#fff;
+  color: #fff;
   &:hover {
-    color:#33b5e5;
+    color: #33b5e5;
   }
 }
-
 
 .bottomsubhead {
   color: #fff;
@@ -96,10 +96,10 @@ a {
   }
 }
 
-.banner{
+.banner {
   padding: 0 20px;
-  h6{
-    font-size:1.5rem;
+  h6 {
+    font-size: 1.5rem;
   }
 }
 

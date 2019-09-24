@@ -29,6 +29,9 @@ import { fadeInUp, flipInX } from 'ng-animate';
   ]
 })
 export class ProjectsComponent implements OnInit {
+  defaultImage = '/assets/images/hero2.jpeg';
+  image = '/assets/images/hero2.jpeg';
+
   title;
   my_title = 'Projects | Allen Pavic';
   pages$: Object;

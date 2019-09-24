@@ -1,5 +1,5 @@
 .view {
-  background: url('/assets/images/gc1.jpg') no-repeat center center;
+  // background: url('/assets/images/gc1.jpg') no-repeat center center;
   background-size: cover;
   height: 70vh;
   border-bottom: solid 3px #33b5e5;
@@ -112,7 +112,7 @@ a {
   }
 }
 
-@media (min-width:700px) and (max-width:1025px){
+@media (min-width: 700px) and (max-width: 1025px) {
   .services {
     margin-left: 0;
     margin-top: 0;
@@ -124,7 +124,6 @@ a {
     margin-left: 0;
   }
 }
-
 
 @media (max-width: 450px) {
   .card {

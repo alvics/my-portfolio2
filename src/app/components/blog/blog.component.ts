@@ -38,6 +38,9 @@ import { DOCUMENT } from '@angular/platform-browser';
   ]
 })
 export class BlogComponent implements OnInit, OnDestroy {
+  defaultImage = '/assets/images/img2_p.jpg';
+  image = '/assets/images/img2_p.jpg';
+
   title = 'Blog';
   url = 'https://ewebdesigns.com.au/wp-json/api/v1/posts?';
   selectedPost;
