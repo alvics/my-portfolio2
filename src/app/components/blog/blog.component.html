@@ -19,29 +19,17 @@
   </div>
 </div>
 
-<!-- <div class="container pt-5">
-  <div class="overlay">
-    <ul>
-      <li *ngFor="let post of restItems">
-        <h1>
-          <div [innerHTML]="post.title.rendered"></div>
-        </h1>
-        <p [innerHTML]="post.content.rendered"></p>
-      </li>
-    </ul>
-  </div>
-</div> -->
 
 <div class="container mt-4">
   <h2 id="blog-list" class="mt-5 text-center pb-3">Blog List</h2>
   <section>
-    <div class="box-card" *ngFor="let post of posts | async">
+    <div class="box-card" *ngFor="let post of posts$ | async">
       <!-- <mdb-card-img [src]="post.featured_image.medium"></mdb-card-img> -->
       <mdb-card-body>
         <mdb-card-title>
-          <h4 [innerHTML]="post.title"></h4>
+          <h4 [innerHTML]="post.title.rendered"></h4>
         </mdb-card-title>
-        <mdb-card-text [innerHTML]="post.excerpt"></mdb-card-text>
+        <mdb-card-text [innerHTML]="post.excerpt.rendered"></mdb-card-text>
 
         <a class="btn btn-primary waves-light" mdbWavesEffect (click)="selectedPost = post">
           Read More
@@ -54,8 +42,8 @@
 <section>
   <div id="box-container" class="container" *ngIf="selectedPost">
     <!-- <img [src]="selectedPost.featured_image.large" />  -->
-    <h1 [innerHTML]="selectedPost.title"></h1>
-    <div [innerHTML]="selectedPost.content"></div>
+    <h1 [innerHTML]="selectedPost.title.rendered"></h1>
+    <div [innerHTML]="selectedPost.content.rendered"></div>
     <span style="float:right">
       <!--Scroll to top-->
       <div

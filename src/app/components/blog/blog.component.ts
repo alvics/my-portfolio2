@@ -12,7 +12,7 @@ import { transition, trigger, useAnimation } from '@angular/animations';
 import { fadeInUp, flipInX } from 'ng-animate';
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
-import { DOCUMENT } from '@angular/platform-browser';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-blog',
@@ -43,15 +43,12 @@ export class BlogComponent implements OnInit, OnDestroy {
   image = '/assets/images/img2_p.jpg';
 
   title = 'Blog';
-  url = 'https://ewebdesigns.com.au/wp-json/api/v1/posts?';
   selectedPost;
-
+  posts$: Observable<any[]>;
   windowScrolled: boolean;
 
   @HostListener('window:scroll', [])
-  posts: Object;
-  featured_image: Object;
-  subsciption: Subscription;
+   subsciption: Subscription;
   constructor(
     private headerService: HeaderService,
     private dataService: DataService,
@@ -60,7 +57,8 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.headerService.currentTitle.subscribe(title => (this.title = title));
-    this.posts = this.getRestItems$();
+   
+    this.posts$ = this.dataService.getPosts();
 
     this.subsciption = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
@@ -69,11 +67,6 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subsciption.unsubscribe();
-  }
-
-  // Read all REST Items
-  getRestItems$() {
-    return this.dataService.getAll().pipe(posts => posts);
   }
 
   newTitle() {

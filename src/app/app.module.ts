@@ -37,7 +37,7 @@ import { GoogleMapsComponent } from './ui/components/google-maps/google-maps.com
 import { BackbtnComponent } from './ui/components/backbtn/backbtn.component';
 import { BackButtonDirective } from './back-button.directive';
 
-import { WordPressApiInterceptor } from './wordpress-api.interceptor';
+
 import { MyErrorHandler } from './myerrorhandler';
 
 @NgModule({
@@ -84,7 +84,7 @@ import { MyErrorHandler } from './myerrorhandler';
     MDBBootstrapModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [ErrorHandler, MyErrorHandler, WordPressApiInterceptor],
+  providers: [ErrorHandler, MyErrorHandler],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

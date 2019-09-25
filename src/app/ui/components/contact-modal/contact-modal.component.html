@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div id="bottomBannerText" class="col-sm-12 col-md-6 bluebanner1">
-          <h3>Ready to start your Enterprise?</h3>
+          <h3>Get My Free Proposal</h3>
           <p>High quality professional websites.</p>
         </div>
         <div class="col-sm-12 col-md-6 bluebanner2">
@@ -18,8 +18,8 @@
 
 <!--Modal: Contact form-->
 
-<div mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
+<div mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
   <form [formGroup]="myForm">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -33,22 +33,22 @@
           <div class="md-form mb-5">
 
             <i class="fa fa-user prefix grey-text"></i>
-            <input type="text" id="form34" class="form-control validate" mdbInputDirective formControlName="contactFormName"
-              [(ngModel)]="itemName">
+            <input type="text" id="form34" class="form-control validate" mdbInputDirective
+              formControlName="contactFormName" [(ngModel)]="itemName">
             <label data-error="wrong" data-success="right" for="form34">Your name</label>
 
 
             <div class="md-form mb-5">
               <i class="fa fa-envelope prefix grey-text"></i>
-              <input type="email" id="form29" class="form-control validate" mdbInputDirective formControlName="contactFormEmail"
-                [(ngModel)]="itemEmail">
+              <input type="email" id="form29" class="form-control validate" mdbInputDirective
+                formControlName="contactFormEmail" [(ngModel)]="itemEmail">
               <label data-error="wrong" data-success="right" for="form29">Your email</label>
             </div>
 
             <div class="md-form mb-5">
               <i class="fa fa-tag prefix grey-text"></i>
-              <input type="text" id="form32" class="form-control validate" mdbInputDirective formControlName="contactFormSubject"
-                [(ngModel)]="itemSubject">
+              <input type="text" id="form32" class="form-control validate" mdbInputDirective
+                formControlName="contactFormSubject" [(ngModel)]="itemSubject">
               <label data-error="wrong" data-success="right" for="form32">Subject</label>
             </div>
 
@@ -60,8 +60,8 @@
             </div>
 
             <div class="modal-footer d-flex justify-content-center">
-              <button [disabled]="!myForm.valid" (click)="onSubmit()" (click)="frame.hide()" type="submit" mdbBtn color="info"
-                class="waves-light" mdbWavesEffect>Send
+              <button [disabled]="!myForm.valid" (click)="onSubmit()" (click)="frame.hide()" type="submit" mdbBtn
+                color="info" class="waves-light" mdbWavesEffect>Send
                 <i class="fa fa-paper-plane-o ml-1"></i>
               </button>
             </div>
