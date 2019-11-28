@@ -79,7 +79,7 @@ import { MyErrorHandler } from './myerrorhandler';
     AngularFireModule,
     AngularFireDatabaseModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCRlY4Es8lcVZqF344b6qay5S3BczGEA9o'
+      apiKey: 'AIzaSyASmiQ6q8whqNytylIhhVru_8HRkJ_-7rw'
     }),
     MDBBootstrapModule.forRoot()
   ],

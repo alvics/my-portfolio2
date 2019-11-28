@@ -31,16 +31,16 @@
         </mdb-card-title>
         <mdb-card-text [innerHTML]="post.excerpt.rendered"></mdb-card-text>
 
-        <a class="btn btn-primary waves-light" mdbWavesEffect (click)="selectedPost = post">
+        <span class="btn btn-primary waves-light" mdbWavesEffect (click)="selectedPost = post">
           Read More
-        </a>
+        </span>
       </mdb-card-body>
     </div>
   </section>
 </div>
 
 <section>
-  <div id="box-container" class="container" *ngIf="selectedPost">
+  <div id="box-container blog-page" class="container" *ngIf="selectedPost">
     <!-- <img [src]="selectedPost.featured_image.large" />  -->
     <h1 [innerHTML]="selectedPost.title.rendered"></h1>
     <div [innerHTML]="selectedPost.content.rendered"></div>

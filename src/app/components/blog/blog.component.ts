@@ -1,35 +1,35 @@
-import { Router, NavigationEnd } from '@angular/router';
-import { HeaderService } from './../../header.service';
-import { DataService } from './../../data.service';
+import { Router, NavigationEnd } from "@angular/router";
+import { HeaderService } from "./../../header.service";
+import { DataService } from "./../../data.service";
 import {
   Component,
   OnInit,
   OnDestroy,
   Inject,
   HostListener
-} from '@angular/core';
-import { transition, trigger, useAnimation } from '@angular/animations';
-import { fadeInUp, flipInX } from 'ng-animate';
-import { filter } from 'rxjs/operators';
-import { Subscription } from 'rxjs';
-import { Observable } from 'rxjs';
+} from "@angular/core";
+import { transition, trigger, useAnimation } from "@angular/animations";
+import { fadeInUp, flipInX } from "ng-animate";
+import { filter } from "rxjs/operators";
+import { Subscription } from "rxjs";
+import { Observable } from "rxjs";
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss'],
+  selector: "app-blog",
+  templateUrl: "./blog.component.html",
+  styleUrls: ["./blog.component.scss"],
   animations: [
-    trigger('fadeInUp', [
+    trigger("fadeInUp", [
       transition(
-        '* => *',
+        "* => *",
         useAnimation(fadeInUp, {
           params: { timing: 1, delay: 0 }
         })
       )
     ]),
-    trigger('flipInX', [
+    trigger("flipInX", [
       transition(
-        '* => *',
+        "* => *",
         useAnimation(flipInX, {
           params: { timing: 2, delay: 0 }
         })
@@ -39,16 +39,16 @@ import { Observable } from 'rxjs';
 })
 export class BlogComponent implements OnInit, OnDestroy {
   defaultImage =
-    'https://ewebdesigns.com.au/wp-content/uploads/2019/09/blurred-min.jpg';
-  image = '/assets/images/img2_p.jpg';
+    "https://res.cloudinary.com/ewebdesigns/image/upload/v1569452391/img2_p_nwm71i.jpg";
+  image = "/assets/images/img2_p.jpg";
 
-  title = 'Blog';
+  title = "Blog";
   selectedPost;
   posts$: Observable<any[]>;
   windowScrolled: boolean;
 
-  @HostListener('window:scroll', [])
-   subsciption: Subscription;
+  @HostListener("window:scroll", [])
+  subsciption: Subscription;
   constructor(
     private headerService: HeaderService,
     private dataService: DataService,
@@ -57,7 +57,7 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.headerService.currentTitle.subscribe(title => (this.title = title));
-   
+
     this.posts$ = this.dataService.getPosts();
 
     this.subsciption = this.router.events
@@ -70,7 +70,7 @@ export class BlogComponent implements OnInit, OnDestroy {
   }
 
   newTitle() {
-    return this.headerService.changeTitle('Blog');
+    return this.headerService.changeTitle("Blog");
   }
 
   onWindowScroll() {

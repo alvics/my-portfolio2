@@ -32,7 +32,7 @@ import { fadeInUp, flipInX } from 'ng-animate';
 })
 export class ContactComponent implements OnInit {
   defaultImage =
-    'https://ewebdesigns.com.au/wp-content/uploads/2019/09/blurred-min.jpg';
+    'https://res.cloudinary.com/ewebdesigns/image/upload/v1569452602/gc1_fxwfgf.jpg';
   image = '/assets/images/gc1.jpg';
 
   name = 'Contact';

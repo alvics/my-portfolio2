@@ -28,7 +28,7 @@ import { fadeInUp, flipInX } from 'ng-animate';
 })
 export class WebDevelopmetComponent implements OnInit {
   defaultImage =
-    'https://ewebdesigns.com.au/wp-content/uploads/2019/09/blurred-min.jpg';
+    'https://res.cloudinary.com/ewebdesigns/image/upload/v1569452414/hero2_f3w5rg.jpg';
   image = '/assets/images/hero2.jpeg';
 
   page_title = 'Web Development';
